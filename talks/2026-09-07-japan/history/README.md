@@ -32,4 +32,4 @@ Source: https://global-neurohack.github.io/ (reviewed September 4, 2026, Pacific
 
 Do not infer realized attendance from the advertised "100+" participants or "3+" countries. The page is still an event announcement and includes incomplete or inconsistent counters. Do not repeat its "world's largest" claim. Project results, actual participation, photos, and community-building lessons need Morgan's firsthand input or a post-event record.
 
-The slide's speaker notes capture these editorial boundaries. The standalone `history-additions.tex` preview uses restrained cream, charcoal, and muted teal styling. It is a content preview, not the completed replacement deck. No changes have been made to the Google Slides original.
+The slide's speaker notes capture these editorial boundaries. These three frames are included in the full `japan-2026.tex` presentation. `history-additions.tex` remains an optional excerpt and uses the same shared theme. No changes have been made to the Google Slides original.

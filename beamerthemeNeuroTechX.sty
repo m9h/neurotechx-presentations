@@ -1,9 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{beamerthemeNeuroTechX}[2026/09/04 Reusable NeuroTechX presentation theme]
-\RequirePackage{tikz}
+\ProvidesPackage{beamerthemeNeuroTechX}[2026/09/04 Restrained NeuroTechX presentation theme]
+\RequirePackage{graphicx}
 \RequirePackage{booktabs}
 \RequirePackage{array}
 \RequirePackage{iftex}
+\RequirePackage{etoolbox}
 \ifPDFTeX
   \RequirePackage[T1]{fontenc}
   \RequirePackage{lmodern}
@@ -14,38 +15,47 @@
     ItalicFont=texgyreheros-italic.otf,
     BoldItalicFont=texgyreheros-bolditalic.otf]
 \fi
-\definecolor{NTXInk}{HTML}{08090D}
-\definecolor{NTXSurface}{HTML}{161922}
-\definecolor{NTXWhite}{HTML}{F3F4F7}
-\definecolor{NTXMuted}{HTML}{9AA1AD}
-\definecolor{NTXCyan}{HTML}{22D3EE}
-\setbeamercolor{normal text}{fg=NTXWhite,bg=NTXInk}
-\AtBeginDocument{\usebeamercolor[fg]{normal text}}
-\setbeamercolor{structure}{fg=NTXCyan}
-\setbeamercolor{alerted text}{fg=NTXCyan}
-\setbeamercolor{frametitle}{fg=NTXWhite,bg=NTXInk}
-\setbeamercolor{block title}{fg=NTXCyan,bg=NTXSurface}
-\setbeamercolor{block body}{fg=NTXWhite,bg=NTXSurface}
-\setbeamercolor{footline}{fg=NTXMuted,bg=NTXInk}
+\definecolor{NTXPaper}{HTML}{FFFBF0}
+\definecolor{NTXInk}{HTML}{282828}
+\definecolor{NTXMuted}{HTML}{64645F}
+\definecolor{NTXTeal}{HTML}{376C68}
+% Compatibility aliases for presentations using the original helpers.
+\colorlet{NTXWhite}{NTXPaper}
+\colorlet{NTXSurface}{NTXPaper}
+\colorlet{NTXCyan}{NTXTeal}
+\setbeamercolor{normal text}{fg=NTXInk,bg=NTXPaper}
+\AtBeginEnvironment{beamer@frameslide}{\color{NTXInk}}
+\setbeamercolor{structure}{fg=NTXInk}
+\setbeamercolor{alerted text}{fg=NTXTeal}
+\setbeamercolor{frametitle}{fg=NTXInk,bg=NTXPaper}
+\setbeamercolor{block title}{fg=NTXInk,bg=NTXPaper}
+\setbeamercolor{block body}{fg=NTXInk,bg=NTXPaper}
+\setbeamercolor{footline}{fg=NTXMuted,bg=NTXPaper}
 \setbeamerfont{frametitle}{size=\Large,series=\bfseries}
 \setbeamerfont{title}{size=\LARGE,series=\bfseries}
 \setbeamerfont{block title}{size=\normalsize,series=\bfseries}
 \setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{itemize item}{\color{NTXCyan}\small\textbullet}
-\setbeamersize{text margin left=9mm,text margin right=9mm}
-\setbeamertemplate{frametitle}{\vspace{5mm}\insertframetitle\par\vspace{2mm}}
-\newcommand{\NTXWordmark}{{\bfseries NeuroTech\textcolor{NTXCyan}{X}}}
-\newcommand{\NTXSource}[2]{\par\vspace{3mm}{\tiny\color{NTXMuted}Source: \href{#1}{#2}\par}}
-\newcommand{\NTXTakeaway}[1]{\par\vspace{4mm}{\large\color{NTXCyan}\bfseries #1\par}}
+\setbeamertemplate{itemize item}{\small\textbullet}
+\setbeamersize{text margin left=10mm,text margin right=10mm}
+\setbeamertemplate{frametitle}{%
+  \vspace{4mm}\insertframetitle\par
+  \ifx\insertframesubtitle\@empty\else
+    {\small\color{NTXMuted}\insertframesubtitle\par}%
+  \fi\vspace{5mm}}
+\newcommand{\NTXWordmark}{{\bfseries NeuroTechX}}
+\newcommand{\NTXSource}[2]{\par\vspace{3mm}{\tiny\color{NTXMuted}\href{#1}{#2}\par}}
+\newcommand{\NTXTakeaway}[1]{\par\vspace{4mm}{\large\bfseries #1\par}}
 \newcommand{\NTXCard}[2]{\begin{block}{#1}#2\end{block}}
+\newcommand{\NTXPoint}[2]{\textbf{#1}\par #2\par\medskip}
 \setbeamertemplate{footline}{%
-  \begin{beamercolorbox}[wd=\paperwidth,ht=5mm,dp=2.5mm,leftskip=9mm,rightskip=9mm]{footline}
-  \scriptsize\NTXWordmark\hfill\insertshorttitle\hfill\insertframenumber
+  \begin{beamercolorbox}[wd=\paperwidth,ht=4mm,dp=2mm,leftskip=10mm,rightskip=10mm]{footline}
+  \tiny NeuroTechX\hfill\insertsectionhead\hfill\insertframenumber
   \end{beamercolorbox}}
 \setbeamertemplate{title page}{%
-  \vspace{2mm}{\large\NTXWordmark\par}\vspace{8mm}
+  \vspace*{5mm}
+  {\large\NTXWordmark\par}\vspace{9mm}
   {\usebeamerfont{title}\inserttitle\par}\vspace{4mm}
-  {\color{NTXCyan}\large\insertsubtitle\par}\vfill
-  {\insertauthor\par}\vspace{1mm}
-  {\small\color{NTXMuted}\insertinstitute\par\insertdate\par}\vspace{4mm}}
-\hypersetup{colorlinks=true,urlcolor=NTXCyan,linkcolor=NTXCyan}
+  {\large\color{NTXMuted}\insertsubtitle\par}\vfill
+  {\insertauthor\par}\vspace{2mm}
+  {\small\color{NTXMuted}\insertinstitute\par\insertdate\par}\vspace{3mm}}
+\hypersetup{colorlinks=true,urlcolor=NTXTeal,linkcolor=NTXInk}

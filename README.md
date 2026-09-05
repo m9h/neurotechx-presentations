@@ -1,45 +1,59 @@
 # NeuroTechX presentations
 
-Current editorial direction: Morgan's existing Google Slides deck establishes NeuroTechX's history; the talk will center on lessons from community building. The initial ecosystem-roadmap draft below is superseded and is not the current talk. New historical material is tracked in [history additions](talks/2026-09-07-japan/history/README.md), including [the 2022, 2023, and 2026 hackathons (PDF)](pdf/history-additions.pdf). Run `make history` to build this standalone preview. The event websites supply facts, not the slide design. The full replacement deck awaits Morgan's additional content.
+A reusable LaTeX Beamer theme and Morgan Hough's presentation for the Japan BMI/BCI Ecosystem Kick-off on September 7, 2026.
 
-Reusable 16:9 LaTeX Beamer slides with a NeuroTechX-inspired theme, plus a working draft for the **Japan BMI/BCI Ecosystem Kick-off**, September 7, 2026, at Coral Capital in Tokyo.
+[Full presentation](pdf/japan-2026.pdf) · [Presenter notes](pdf/japan-2026-notes.pdf) · [Reusable starter deck](pdf/template.pdf)
 
-The Tokyo draft is paced for **25 minutes of remarks and 5 minutes of discussion**: 15 main slides and one sources backup. The speaker is **Morgan Hough, Executive Director, NeuroTechX**. Its proposed message is that community, shared tools, and practical international collaborations can help connect research to real-world use. Final positioning awaits confirmation. The proposed 90-day program is a discussion prompt, not an organizational commitment.
+## The talk
 
-Download the checked-in [slides](pdf/japan-2026.pdf), [presenter notes](pdf/japan-2026-notes.pdf), or [starter deck](pdf/template.pdf). Run `make snapshot` after edits to refresh these public PDF copies.
+**NeuroTechX: Building a Community**
+
+Morgan Hough, Executive Director, NeuroTechX
+
+The full deck covers four questions:
+
+1. What is NeuroTechX?
+2. What do we do?
+3. How do we add to the community?
+4. What does the future hold for neurotech founders?
+
+The content draws on Morgan's original Google Slides presentation, documented NeuroTechX activities, EEG-ExPy and MOABB, and the 2022, 2023, and 2026 hackathons. The historical slides are integrated into the main deck. The founder section discusses uses of existing community resources and questions for new ventures; it does not announce a roadmap, funding program, partnerships, or market predictions.
+
+There are **17 main slides and one sources backup**, paced for **25 minutes of remarks and five minutes of discussion**. Timed speaker notes are embedded in the source. Morgan can add firsthand lessons and examples as the talk develops.
+
+The earlier Japan ecosystem proposal has been replaced in the current source and PDFs. The repository remains private.
 
 ## Build
 
 Install [Tectonic](https://tectonic-typesetting.github.io/) (tested with 0.17.0), then run from the repository root:
 
 ```sh
-make all
+make snapshot
 ```
 
-Outputs:
+This builds the slides, notes, template, and optional history excerpt into `build/`, then refreshes the checked-in copies in `pdf/`. Individual targets are `make slides`, `make notes`, `make template`, and `make history`.
 
-- `build/japan-2026.pdf` — projected slides.
-- `build/japan-2026-notes.pdf` — slides with timed speaker notes on the right, for a presenter display.
-- `build/template.pdf` — minimal example for future presentations.
+The first build needs network access for TeX packages; subsequent builds use Tectonic's cache. The notes PDF shows the slide on the left and timed notes on the right. Share the regular PDF with the audience. Links are disabled in the notes PDF because the two-page transformation affects link placement.
 
-The first Tectonic build needs network access to download TeX packages. Later builds use its cache. The notes PDF is for preparation/presenter software; share the regular PDF with the audience. Hyperlinks are disabled in the notes PDF because the two-page layout transforms their positions; they remain active in the projected deck.
+For TeX Live: `latexmk -xelatex -outdir=build japan-2026.tex`. For Overleaf, upload the repository, choose XeLaTeX, and select `japan-2026.tex` as the main document. Those are documented alternatives; local verification uses Tectonic.
 
-For TeX Live, run `latexmk -xelatex -outdir=build japan-2026.tex` from the repository root. For Overleaf, upload the repository, select XeLaTeX, and set `japan-2026.tex` (or `template.tex`) as the main document. TeX Live and Overleaf are documented alternatives; local verification uses Tectonic.
+## Edit and reuse
 
-## Adapt the deck
+- `talks/2026-09-07-japan/metadata.tex`: title, speaker, and event.
+- `talks/2026-09-07-japan/slides.tex`: the full talk and speaker notes.
+- `talks/2026-09-07-japan/history/`: reusable hackathon frames included in the full talk.
+- `beamerthemeNeuroTechX.sty`: shared cream, charcoal, and muted-teal theme.
+- `assets/history/`: experiment and analysis figures from Morgan's original presentation.
+- `template.tex`: copy this root-level file to start another talk.
 
-Edit `talks/2026-09-07-japan/metadata.tex` for the speaker, affiliation, title, and event. Edit `slides.tex` in the same folder for content and timed `\note{...}` blocks. The style is separate in `beamerthemeNeuroTechX.sty`.
+Compile a new talk with `tectonic -X compile --outdir build your-talk.tex`. Keep the theme beside the entry document or install it in your TeX search path. Theme helpers include `\NTXPoint{heading}{body}`, `\NTXSource{URL}{label}`, and `\NTXWordmark`. Standard Beamer blocks, columns, figures, and notes are supported.
 
-For a new talk, copy `template.tex` to a new file at the root and edit the metadata and frames. Compile with `tectonic -X compile --outdir build your-talk.tex`. Keep the shared theme next to the entry document, or install it in your TeX search path.
+## Event time
 
-Theme helpers: `\NTXWordmark`, `\NTXCard{heading}{body}`, `\NTXTakeaway{text}`, and `\NTXSource{URL}{label}`. Standard Beamer columns, blocks, tables, figures, and speaker notes work normally. Avoid automatic shrinking: split crowded frames instead.
+The full event runs Monday, September 7, 2026, **13:00–18:00 JST**: **Sunday, September 6, 21:00 through Monday, September 7, 02:00 PDT** in San Francisco. Morgan's individual speaking time was not supplied.
 
-## Event and time zones
+## Sources and design
 
-The organizers' brief gives Monday, September 7, 2026, **13:00–18:00 JST**, hybrid, English, at Coral Capital Tokyo Office, 12F Toranomon Hills Edomizaka Terrace, 2-9-1 Toranomon, Minato-ku, Tokyo. That is **Sunday, September 6, 21:00 through Monday, September 7, 02:00 PDT**. The individual speaking time is not yet supplied.
+[Sources](SOURCES.md) records factual support and editorial boundaries. [Brand notes](BRAND.md) documents the restrained presentation design chosen in response to Morgan's feedback. Event websites are historical sources, not visual references. The original Google Slides deck has not been modified.
 
-## Brand and sources
-
-See [BRAND.md](BRAND.md) for colors, typography, and reuse guidance, and [SOURCES.md](SOURCES.md) for claim provenance. This is a presentation theme derived from the current website's appearance, not a claim of formally approved NeuroTechX brand guidelines. No stock imagery or generated logo is required.
-
-Original code and prose are available under [MIT](LICENSE). NeuroTechX names and marks remain the property of their owners; the code license does not grant trademark rights or imply endorsement.
+Original code and prose are licensed under [MIT](LICENSE). Imported figures and third-party names and marks retain their existing rights; see [asset provenance](assets/history/README.md). The code license grants no trademark rights or endorsement.

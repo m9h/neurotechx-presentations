@@ -1,22 +1,32 @@
 # Sources and editorial scope
 
-## Historical additions
+The content foundation is [Morgan's original presentation](https://docs.google.com/presentation/d/1TjLbvGQzA-wy0sNWeTrw_2A7cbOmr_JNhvvXQkZjr14/edit), titled *NeuroTechX: Lessons from Community Building*. Morgan requested a full presentation covering the organization, its activities, its contribution to the community, and the future for neurotech founders. The original generated Japan ecosystem roadmap has been removed from the current deck.
 
-The [2022](https://neurotechx.com/hackathon2022/) and [2023](https://neurotechx.com/hackathon2023/) event pages supply dates, formats, listed local hosts, and tracks for `history/hackathons-2022-2023.tex`. Morgan identifies both events as historically important and rejects their website styling as a design reference. The slides summarize the published programs without inferring attendance, project outcomes, or lessons.
+## Sources by slide
 
-The current direction follows Morgan's existing historical presentation and firsthand lessons, not the original generated roadmap documented below. [Global NeuroHack 2026](https://global-neurohack.github.io/) supplies the published date, venue, track names, and program for `history/global-neurohack.tex`. Morgan supplies the fact that NeuroTechX hosted the recent event; the site separately credits organizing support. Advertised participation is not used as actual attendance. See [the historical source notes](talks/2026-09-07-japan/history/README.md).
-
-## Superseded initial draft
-
-Sources checked September 4, 2026. Hyperlinks are embedded on factual slides and in the backup frame.
-
-| Material | Source | Use |
+| Slides | Source | Use |
 | --- | --- | --- |
-| Mission and three pillars | https://www.neurotechx.org/about and https://neurotechx.com/ | Slide 3; paraphrased, without membership counts |
-| Current visual treatment | https://www.neurotechx.org/ | Colors and typographic wordmark; see BRAND.md |
-| MOABB purpose and cross-session example | https://github.com/NeuroTechX/moabb | Slide 8 and notes; no performance or clinical claims |
-| Event time, venue, themes, and Japan's listed strengths | Organizer-provided event brief supplied by the speaker | Event metadata and slide 4; no public event URL supplied |
+| 1 | Morgan and organizer-provided event brief | Name, Executive Director role, event, date |
+| 2 | [NeuroTechX history](https://www.neurotechx.org/about) and Morgan's deck | Nonprofit, Montréal origins, founding in 2015, three pillars |
+| 3–4 | Morgan's deck; [education page](https://www.neurotechx.org/education) | Chapter activities, SF hacknight format, education and projects |
+| 5 | [EEG-ExPy](https://github.com/NeuroTechX/EEG-ExPy), Morgan's slides 9–10 | Experiment project; original PsychoPy illustration |
+| 6 | Morgan's slides 7–11 | Citizen-science examples; original N170 analysis illustration |
+| 7 | [MOABB repository](https://github.com/NeuroTechX/moabb), [Chevallier et al., 2024](https://arxiv.org/abs/2404.15319) | Reproducibility; 30 pipelines, 36 datasets in the cited study |
+| 8 | Morgan's deck and [education page](https://www.neurotechx.org/education) | Primer, workshops, webinars, developer meetings |
+| 9 | Synthesis of the preceding activities | What the activities make available, not measured outcomes |
+| 10 | [2022 hackathon](https://neurotechx.com/hackathon2022/) | Dates, online format, five listed hosts, three tracks |
+| 11 | [2023 hackathon](https://neurotechx.com/hackathon2023/) | Dates, hybrid format, eight listed hosts, addition of ethics |
+| 12 | [Global NeuroHack 2026](https://global-neurohack.github.io/) and Morgan | Date, venue, tracks, program; Morgan confirms NeuroTechX hosted it |
+| 13 | The three event programs | Comparison of participation formats and topics |
+| 14–16 | Discussion grounded in the resources and events already shown | Potential uses for founders, application questions, contribution |
+| 17–18 | Organization, project, and event links | Contact paths and references |
 
-The handoff model, evaluation questions, training path, international collaboration examples, resource suggestions, 90-day plan, and review measures are original proposals for discussion. They are not attributed to the organizers and do not announce commitments by NeuroTechX, MOABB maintainers, Japanese institutions, or prospective partners.
+Sources were accessed during this presentation work. The hackathon source pages remain announcement-style pages; listed hosts and advertised programs are not treated as independently verified attendance or outcomes. See [historical notes](talks/2026-09-07-japan/history/README.md).
 
-The talk is an ecosystem contribution, not an exhaustive technology survey or clinical/regulatory guide. Morgan Hough confirmed his speaker details as Executive Director, NeuroTechX. The exact speaking time and preferred organizational message remain to be confirmed. The 2022 NeuroTechX media kit was inspected as historical context but is not used for present-day statistics or branding.
+## Editorial boundaries
+
+The founder section is a discussion of opportunities to learn, explore, evaluate, and contribute using existing resources. It contains no market-size forecasts, commercialization timelines, invented company success stories, new institutional programs, or promises of funding or partnerships. Hackathon tracks are project prompts, not demonstrations that the requested capabilities were achieved.
+
+Morgan's personal lessons, event outcomes, attendance figures, and future organizational commitments have not been fabricated. Speaker notes leave room for firsthand narration. The event context does not define a Japanese policy agenda for this talk.
+
+The shared figures are taken from Morgan's supplied presentation; their provenance is recorded in [assets/history/README.md](assets/history/README.md). They illustrate existing work, not new experimental findings. The websites' promotional design is not reused.
