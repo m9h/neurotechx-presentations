@@ -2,7 +2,7 @@
 
 Reusable 16:9 LaTeX Beamer slides with a NeuroTechX-inspired theme, plus a working draft for the **Japan BMI/BCI Ecosystem Kick-off**, September 7, 2026, at Coral Capital in Tokyo.
 
-The Tokyo draft is paced for **25 minutes of remarks and 5 minutes of discussion**: 15 main slides and one sources backup. Its proposed message is that community, shared tools, and practical international collaborations can help connect research to real-world use. Speaker identity and final positioning await confirmation. The proposed 90-day program is a discussion prompt, not an organizational commitment.
+The Tokyo draft is paced for **25 minutes of remarks and 5 minutes of discussion**: 15 main slides and one sources backup. The speaker is **Morgan Hough, Executive Director, NeuroTechX**. Its proposed message is that community, shared tools, and practical international collaborations can help connect research to real-world use. Final positioning awaits confirmation. The proposed 90-day program is a discussion prompt, not an organizational commitment.
 
 Download the checked-in [slides](pdf/japan-2026.pdf), [presenter notes](pdf/japan-2026-notes.pdf), or [starter deck](pdf/template.pdf). Run `make snapshot` after edits to refresh these public PDF copies.
 
