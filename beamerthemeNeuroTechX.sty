@@ -1,0 +1,51 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamerthemeNeuroTechX}[2026/09/04 Reusable NeuroTechX presentation theme]
+\RequirePackage{tikz}
+\RequirePackage{booktabs}
+\RequirePackage{array}
+\RequirePackage{iftex}
+\ifPDFTeX
+  \RequirePackage[T1]{fontenc}
+  \RequirePackage{lmodern}
+\else
+  \RequirePackage{fontspec}
+  \setsansfont{texgyreheros-regular.otf}[
+    BoldFont=texgyreheros-bold.otf,
+    ItalicFont=texgyreheros-italic.otf,
+    BoldItalicFont=texgyreheros-bolditalic.otf]
+\fi
+\definecolor{NTXInk}{HTML}{08090D}
+\definecolor{NTXSurface}{HTML}{161922}
+\definecolor{NTXWhite}{HTML}{F3F4F7}
+\definecolor{NTXMuted}{HTML}{9AA1AD}
+\definecolor{NTXCyan}{HTML}{22D3EE}
+\setbeamercolor{normal text}{fg=NTXWhite,bg=NTXInk}
+\AtBeginDocument{\usebeamercolor[fg]{normal text}}
+\setbeamercolor{structure}{fg=NTXCyan}
+\setbeamercolor{alerted text}{fg=NTXCyan}
+\setbeamercolor{frametitle}{fg=NTXWhite,bg=NTXInk}
+\setbeamercolor{block title}{fg=NTXCyan,bg=NTXSurface}
+\setbeamercolor{block body}{fg=NTXWhite,bg=NTXSurface}
+\setbeamercolor{footline}{fg=NTXMuted,bg=NTXInk}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{block title}{size=\normalsize,series=\bfseries}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\color{NTXCyan}\small\textbullet}
+\setbeamersize{text margin left=9mm,text margin right=9mm}
+\setbeamertemplate{frametitle}{\vspace{5mm}\insertframetitle\par\vspace{2mm}}
+\newcommand{\NTXWordmark}{{\bfseries NeuroTech\textcolor{NTXCyan}{X}}}
+\newcommand{\NTXSource}[2]{\par\vspace{3mm}{\tiny\color{NTXMuted}Source: \href{#1}{#2}\par}}
+\newcommand{\NTXTakeaway}[1]{\par\vspace{4mm}{\large\color{NTXCyan}\bfseries #1\par}}
+\newcommand{\NTXCard}[2]{\begin{block}{#1}#2\end{block}}
+\setbeamertemplate{footline}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=5mm,dp=2.5mm,leftskip=9mm,rightskip=9mm]{footline}
+  \scriptsize\NTXWordmark\hfill\insertshorttitle\hfill\insertframenumber
+  \end{beamercolorbox}}
+\setbeamertemplate{title page}{%
+  \vspace{2mm}{\large\NTXWordmark\par}\vspace{8mm}
+  {\usebeamerfont{title}\inserttitle\par}\vspace{4mm}
+  {\color{NTXCyan}\large\insertsubtitle\par}\vfill
+  {\insertauthor\par}\vspace{1mm}
+  {\small\color{NTXMuted}\insertinstitute\par\insertdate\par}\vspace{4mm}}
+\hypersetup{colorlinks=true,urlcolor=NTXCyan,linkcolor=NTXCyan}

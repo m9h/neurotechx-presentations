@@ -1,0 +1,176 @@
+\begin{frame}[plain]
+  \titlepage
+  \note{[0:00--1:00] Thank the organizers and the people joining in Tokyo and online. Introduce yourself and your connection to NeuroTechX once the speaker metadata is confirmed. The question for this talk is how people and institutions can work together to move useful neurotechnology into the world.}
+\end{frame}
+
+\begin{frame}{Make collaboration a repeatable process}
+  \relax
+  {\LARGE Japan's research strengths can become\par\medskip
+  \alert{shared pathways to real-world use.}\par}
+  \vspace{6mm}
+  \begin{columns}[T,onlytextwidth]
+    \column{.31\textwidth}\NTXCard{01 / Connect}{Bring users, researchers, builders, and partners into the same work.}
+    \column{.31\textwidth}\NTXCard{02 / Build}{Create tools, skills, and evidence that others can reuse.}
+    \column{.31\textwidth}\NTXCard{03 / Translate}{Give each promising project a next partner and a next milestone.}
+  \end{columns}
+  \note{[1:00--2:30] Present this as the thesis of the talk. The symposium already brings together many necessary participants. What would make their cooperation persist after today? These three actions are a proposed organizing framework, not an announcement of an agreed program.}
+\end{frame}
+
+\begin{frame}{NeuroTechX connects people to the field}
+  \begin{columns}[T,onlytextwidth]
+    \column{.31\textwidth}\NTXCard{Community}{Local chapters and a global network create places to meet and collaborate.}
+    \column{.31\textwidth}\NTXCard{Education}{Accessible learning resources help people enter neurotechnology and develop skills.}
+    \column{.31\textwidth}\NTXCard{Professional development}{Projects and connections help talent find its next opportunity.}
+  \end{columns}
+  \NTXTakeaway{A community can make the next collaboration easier to start.}
+  \NTXSource{https://www.neurotechx.org/about}{NeuroTechX: mission and three pillars}
+  \note{[2:30--4:00] Explain the three pillars in plain language. A person may arrive through a local event, learn with peers, and contribute to an open project. Avoid quoting membership totals: public pages report different counts. Do not imply that NeuroTechX provides clinical approval or investment.}
+\end{frame}
+
+\begin{frame}{Start with the strengths already in the room}
+  \begin{columns}[T,onlytextwidth]
+    \column{.47\textwidth}
+      \NTXCard{Discovery and engineering}{Brain science\par Neural engineering\par AI and robotics}
+    \column{.47\textwidth}
+      \NTXCard{Translation and production}{Rehabilitation\par Medical devices\par Precision manufacturing}
+  \end{columns}
+  \NTXTakeaway{Organize around a user need that requires several of these strengths.}
+  {\tiny\color{NTXMuted}Context: strengths identified in the organizers' event brief.}
+  \note{[4:00--5:30] Attribute this list to the event brief. It is a starting point for discussion, not a quantitative international ranking. Ask the audience to consider where they already have collaborators and where a missing relationship is slowing progress.}
+\end{frame}
+
+\begin{frame}{An ecosystem needs working handoffs}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm,every node/.style={font=\small,align=center,text=NTXWhite}]
+    \foreach \x/\heading/\detail in {0/User need/Define value,3/Research/Test a mechanism,6/Product/Build reliability,9/Use/Support adoption}{
+      \node[fill=NTXSurface,text width=2.3cm,minimum height=1.5cm] at (\x,0) {\textcolor{NTXCyan}{\heading}\par\smallskip\detail};}
+    \draw[->,thick,NTXCyan] (1.25,0)--(1.7,0);
+    \draw[->,thick,NTXCyan] (4.25,0)--(4.7,0);
+    \draw[->,thick,NTXCyan] (7.25,0)--(7.7,0);
+    \draw[->,NTXMuted] (9,-.9)--(9,-1.4)--(0,-1.4)--(0,-.9);
+    \node[text=NTXMuted] at (4.5,-1.8) {Feedback from users and real operating conditions};
+  \end{tikzpicture}
+  \NTXTakeaway{For every handoff: an owner, evidence, and a receiving partner.}
+  \note{[5:30--7:30] This simplified process is a discussion framework. Actual development is iterative. A promising algorithm may need a device partner; a device prototype may need a clinical collaborator; an otherwise useful tool may lack support in everyday settings. Ask what has to be true for the next partner to take responsibility.}
+\end{frame}
+
+\begin{frame}{Different interfaces need different partners}
+  \begin{columns}[T,onlytextwidth]
+    \column{.47\textwidth}\NTXCard{For an implanted BCI project}{Which clinical team and intended users shape the design?\par\medskip Who supports implantation, follow-up, and long-term use?}
+    \column{.47\textwidth}\NTXCard{For a non-invasive BCI project}{Where and by whom will it be used?\par\medskip How will setup, signal quality, comfort, and repeat use be evaluated?}
+  \end{columns}
+  \NTXTakeaway{Choose a use case before choosing a collaboration model.}
+  \note{[7:30--9:00] Frame these as questions for project teams, not a complete clinical or regulatory checklist. Non-invasive does not automatically mean consumer use or low risk. Intended use matters. This meeting can connect projects to the appropriate specialists rather than prescribing one route for all technologies.}
+\end{frame}
+
+\begin{frame}{At the AI interface, agree on the test}
+  \begin{enumerate}
+    \setlength\itemsep{4mm}
+    \item What does the model add over a simple baseline?
+    \item Does the result hold across sessions and people?
+    \item What happens when the model is uncertain or wrong?
+    \item Does the complete system help the intended user?
+  \end{enumerate}
+  \NTXTakeaway{A shared evaluation plan makes collaboration concrete.}
+  \note{[9:00--10:30] These are proposed evaluation questions. Distinguish held-out evaluation from training performance, and offline decoding from useful interaction. A benchmark can support algorithm comparison; prospective evaluation with intended users asks a further question.}
+\end{frame}
+
+\begin{frame}{A working example: shared BCI benchmarks}
+  \relax
+  {\Large\alert{MOABB}\quad Mother of All BCI Benchmarks\par}
+  \vspace{4mm}
+  \begin{columns}[T,onlytextwidth]
+    \column{.47\textwidth}\NTXCard{What exists}{An open-source framework for comparing BCI algorithms on public EEG datasets.}
+    \column{.47\textwidth}\NTXCard{A possible Japan--global project}{Reproduce a baseline together, document the protocol, and contribute a useful improvement.}
+  \end{columns}
+  \NTXTakeaway{Give a new partnership something small and verifiable to build.}
+  \NTXSource{https://github.com/NeuroTechX/moabb}{MOABB: project description and evaluation example}
+  \note{[10:30--12:30] MOABB is an existing project under NeuroTechX. Its documentation includes cross-session evaluation. The Japan collaboration is a proposal, not an existing commitment. It could begin with public data and a documented replication. A benchmark result is not a clinical efficacy claim, and contributors should coordinate with maintainers.}
+\end{frame}
+
+\begin{frame}{Give people a path from interest to contribution}
+  \begin{columns}[T,onlytextwidth]
+    \column{.31\textwidth}\NTXCard{Enter}{A welcoming introductory session.\par\medskip Explain the problem and prerequisites.}
+    \column{.31\textwidth}\NTXCard{Practice}{A guided workshop using a reproducible example.\par\medskip Pair different disciplines.}
+    \column{.31\textwidth}\NTXCard{Contribute}{A scoped issue and an available mentor.\par\medskip Publish what the team learned.}
+  \end{columns}
+  \NTXTakeaway{Measure whether people return and finish useful work.}
+  \note{[12:30--14:00] This is a proposed community program. A meetup is an entry point; a supported project gives people a reason to return. Technical documentation, translation, design, and user research can be valuable contributions alongside code. Make mentorship an explicit responsibility.}
+\end{frame}
+
+\begin{frame}{Make international collaboration specific}
+  \begin{columns}[T,onlytextwidth]
+    \column{.47\textwidth}\NTXCard{Start with one shared artifact}{A benchmark replication\par A bilingual technical guide\par A jointly reviewed project brief}
+    \column{.47\textwidth}\NTXCard{Give it a working agreement}{One owner on each side\par A regular meeting time\par A review date and success criterion}
+  \end{columns}
+  \NTXTakeaway{Translate the work so that the next team can participate.}
+  \note{[14:00--15:30] English documentation supports international participation; Japanese learning materials support local access. Choose a small artifact with reciprocal value. International collaboration needs available people and a schedule, as well as introductions. No partner has been committed by this draft.}
+\end{frame}
+
+\begin{frame}{Fund the work between the milestones}
+  \begin{columns}[T,onlytextwidth]
+    \column{.47\textwidth}\NTXCard{Work that needs an owner}{Data and protocol documentation\par Tool maintenance and testing\par Mentoring and coordination\par User feedback and follow-through}
+    \column{.47\textwidth}\NTXCard{A useful partner offer}{An engineer's time\par A mentor or domain specialist\par A project venue or equipment\par Support for a defined deliverable}
+  \end{columns}
+  \NTXTakeaway{Ask partners to support a deliverable with a named steward.}
+  \note{[15:30--17:00] This is a resource-allocation proposal, not financial advice or a fundraising announcement. Explain that a visible prototype depends on less visible work. Corporate partners, universities, and community groups can contribute time and expertise as well as money.}
+\end{frame}
+
+\begin{frame}{A proposed first 90 days}
+  \begin{columns}[T,onlytextwidth]
+    \column{.31\textwidth}\NTXCard{Days 1--30 / Map}{Identify willing participants.\par\medskip Choose one problem and two project leads.}
+    \column{.31\textwidth}\NTXCard{Days 31--60 / Build}{Run a joint workshop.\par\medskip Produce a reproducible first artifact.}
+    \column{.31\textwidth}\NTXCard{Days 61--90 / Review}{Demonstrate the work.\par\medskip Publish lessons and decide the next step.}
+  \end{columns}
+  \NTXTakeaway{Leave today with an owner and a date for the next conversation.}
+  \note{[17:00--19:00] Explicitly call this a proposal for discussion. Start with public data or other material that participants are entitled to share. The goal is to test whether a collaboration can work. A useful review can conclude that the project should change direction or stop.}
+\end{frame}
+
+\begin{frame}{Measure what the collaboration makes possible}
+  \begin{tabular}{@{}>{\raggedright\arraybackslash}p{.44\textwidth}>{\raggedright\arraybackslash}p{.49\textwidth}@{}}
+    \toprule
+    \textcolor{NTXCyan}{Question} & \textcolor{NTXCyan}{Evidence to bring to the review}\\
+    \midrule
+    Did people become contributors? & Completed tasks and returning participants.\\[4mm]
+    Can another team use the work? & An independent reproduction or documented reuse.\\[4mm]
+    Did the project move forward? & A receiving partner and an agreed next milestone.\\[4mm]
+    Can the effort continue? & A maintainer, time allocation, and next review date.\\
+    \bottomrule
+  \end{tabular}
+  \note{[19:00--21:00] These are proposed measures, not reported results. Attendance can be useful, but the review should also examine what participants accomplished and whether others can use it. Invite the audience to adapt these measures to its own projects.}
+\end{frame}
+
+\begin{frame}{What could each of us bring?}
+  \begin{columns}[T,onlytextwidth]
+    \column{.47\textwidth}\NTXCard{Researchers and clinicians}{A meaningful question, a protocol, or a domain mentor.}
+      \NTXCard{Builders and students}{A reproducible example, a documented tool, or time to contribute.}
+    \column{.47\textwidth}\NTXCard{Startups and industry}{A concrete engineering problem and someone available to work on it.}
+      \NTXCard{Funders and ecosystem organizers}{Support for coordination, a scoped deliverable, and a review.}
+  \end{columns}
+  \note{[21:00--23:00] Invite everyone to identify one contribution they can realistically make. Include people with lived experience of the intended use: their priorities should shape the question and the evaluation, with appropriate support for their participation. Avoid making commitments on behalf of NeuroTechX or anyone else.}
+\end{frame}
+
+\begin{frame}{One problem. Two partners. One next step.}
+  \relax
+  {\LARGE What could we build together\par\medskip
+  \alert{in the next 90 days?}\par}
+  \vspace{7mm}
+  \href{https://www.neurotechx.org/community}{neurotechx.org/community}\par\smallskip
+  \href{https://github.com/NeuroTechX/moabb}{github.com/NeuroTechX/moabb}
+  \note{[23:00--25:00] Return to the central proposition: make collaboration repeatable. Invite a problem, a potential partner, and a next action from the audience. Thank the organizers. [25:00--30:00] Discussion. If the slot includes introductions or transitions, shorten the remarks accordingly.}
+\end{frame}
+
+\appendix
+\begin{frame}{Sources and scope}
+  \small
+  \textcolor{NTXCyan}{Organization and visual reference}\par
+  \href{https://www.neurotechx.org/about}{NeuroTechX: about and mission}\par
+  \href{https://www.neurotechx.org/}{NeuroTechX: website visual identity}\par\medskip
+  \textcolor{NTXCyan}{Open-source example}\par
+  \href{https://github.com/NeuroTechX/moabb}{MOABB: official repository and documentation}\par\medskip
+  \textcolor{NTXCyan}{Event context}\par
+  Organizer-provided event brief; September 7, 2026, Tokyo.\par\medskip
+  {\color{NTXMuted}The collaboration framework and 90-day plan are proposals.\par
+  This draft does not announce organizational commitments. Sources checked September 4, 2026.}
+  \note{Backup only; outside the prepared 25-minute remarks. Full source provenance and draft status are documented in the repository.}
+\end{frame}
