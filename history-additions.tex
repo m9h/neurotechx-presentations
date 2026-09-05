@@ -1,0 +1,23 @@
+% Standalone preview of additions to Morgan's historical presentation.
+% This intentionally does not reproduce the superseded ecosystem roadmap.
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage{fontspec}
+\setsansfont{texgyreheros-regular.otf}[
+  BoldFont=texgyreheros-bold.otf,
+  ItalicFont=texgyreheros-italic.otf,
+  BoldItalicFont=texgyreheros-bolditalic.otf]
+\definecolor{Paper}{HTML}{FFFBF0}
+\definecolor{Ink}{HTML}{282828}
+\definecolor{Teal}{HTML}{376C68}
+\setbeamercolor{normal text}{fg=Ink,bg=Paper}
+\setbeamercolor{structure}{fg=Ink}
+\setbeamercolor{frametitle}{fg=Ink,bg=Paper}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+\setbeamersize{text margin left=10mm,text margin right=10mm}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+\setbeamertemplate{itemize item}{\small\textbullet}
+\hypersetup{colorlinks=true,urlcolor=Teal,pdftitle={NeuroTechX history: Global NeuroHack 2026},pdfauthor={Morgan Hough}}
+\begin{document}
+\input{talks/2026-09-07-japan/history/global-neurohack}
+\end{document}

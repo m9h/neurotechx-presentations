@@ -1,5 +1,11 @@
 # Sources and editorial scope
 
+## Historical additions
+
+The current direction follows Morgan's existing historical presentation and firsthand lessons, not the original generated roadmap documented below. [Global NeuroHack 2026](https://global-neurohack.github.io/) supplies the published date, venue, track names, and program for `history/global-neurohack.tex`. Morgan supplies the fact that NeuroTechX hosted the recent event; the site separately credits organizing support. Advertised participation is not used as actual attendance. See [the historical source notes](talks/2026-09-07-japan/history/README.md).
+
+## Superseded initial draft
+
 Sources checked September 4, 2026. Hyperlinks are embedded on factual slides and in the backup frame.
 
 | Material | Source | Use |

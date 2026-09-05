@@ -1,5 +1,7 @@
 # NeuroTechX presentations
 
+Current editorial direction: Morgan's existing Google Slides deck establishes NeuroTechX's history; the talk will center on lessons from community building. The initial ecosystem-roadmap draft below is superseded and is not the current talk. New historical material is tracked in [history additions](talks/2026-09-07-japan/history/README.md), starting with [Global NeuroHack 2026 (PDF)](pdf/history-additions.pdf). Run `make history` to build this standalone preview. The full replacement deck awaits Morgan's additional content.
+
 Reusable 16:9 LaTeX Beamer slides with a NeuroTechX-inspired theme, plus a working draft for the **Japan BMI/BCI Ecosystem Kick-off**, September 7, 2026, at Coral Capital in Tokyo.
 
 The Tokyo draft is paced for **25 minutes of remarks and 5 minutes of discussion**: 15 main slides and one sources backup. The speaker is **Morgan Hough, Executive Director, NeuroTechX**. Its proposed message is that community, shared tools, and practical international collaborations can help connect research to real-world use. Final positioning awaits confirmation. The proposed 90-day program is a discussion prompt, not an organizational commitment.
