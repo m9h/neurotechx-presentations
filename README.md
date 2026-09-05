@@ -1,6 +1,6 @@
 # NeuroTechX presentations
 
-Current editorial direction: Morgan's existing Google Slides deck establishes NeuroTechX's history; the talk will center on lessons from community building. The initial ecosystem-roadmap draft below is superseded and is not the current talk. New historical material is tracked in [history additions](talks/2026-09-07-japan/history/README.md), starting with [Global NeuroHack 2026 (PDF)](pdf/history-additions.pdf). Run `make history` to build this standalone preview. The full replacement deck awaits Morgan's additional content.
+Current editorial direction: Morgan's existing Google Slides deck establishes NeuroTechX's history; the talk will center on lessons from community building. The initial ecosystem-roadmap draft below is superseded and is not the current talk. New historical material is tracked in [history additions](talks/2026-09-07-japan/history/README.md), including [the 2022, 2023, and 2026 hackathons (PDF)](pdf/history-additions.pdf). Run `make history` to build this standalone preview. The event websites supply facts, not the slide design. The full replacement deck awaits Morgan's additional content.
 
 Reusable 16:9 LaTeX Beamer slides with a NeuroTechX-inspired theme, plus a working draft for the **Japan BMI/BCI Ecosystem Kick-off**, September 7, 2026, at Coral Capital in Tokyo.
 
