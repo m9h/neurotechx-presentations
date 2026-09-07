@@ -27,8 +27,8 @@ This is a standalone, editable selection, not a replacement for the complete dec
 | 9 | 05:30–07:00 | Dans le vent | slides.tex |
 | 10 | 07:00–08:30 | NeuroTechX Hacknights | slides.tex |
 | 11 | 08:30–09:45 | Buzz-in-Review: a shared annual chapter event | slides.tex |
-| 12 | 09:45–10:30 | NeuroTechX Content Laboratory | slides.tex |
-| 13 | 10:30–11:00 | The NeuroTechX newsletter: a long-running community resource | slides.tex |
+| 12 | 09:45–10:15 | The NeuroTechX newsletter: a long-running community resource | slides.tex |
+| 13 | 10:15–11:00 | NeuroTechX Content Laboratory | slides.tex |
 | 14 | 11:00–12:00 | Education: a way into the field | slides.tex |
 | 15 | 12:00–13:00 | EEG-ExPy: roots in muse-lsl and eeg-notebooks | slides.tex |
 | 16 | 13:00–14:00 | MOABB: making BCI comparisons reproducible | dleeg.tex |
