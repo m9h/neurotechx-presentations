@@ -1,6 +1,6 @@
 # Introduction for Japan, September 7, 2026
 
-32 slides, planned remarks **29:45**; divider transitions are included in adjacent speaking time. About 0:15 remains in a 30-minute slot for questions or pauses.
+34 slides, planned remarks **32:15**; divider transitions are included in adjacent speaking time. Allow additional time for questions. Restoring quantum sensors (1:00) and Mind in Vitro (1:30) extends the previous 29:45 version.
 
 Build: `make intro`. Outputs: `pdf/intro-japan-2026.pdf` and `pdf/intro-japan-2026-notes.pdf`.
 
@@ -40,20 +40,22 @@ This is a standalone, editable selection, not a replacement for the complete dec
 | 22 | 18:45–20:00 | The NeuroTech Microcredential Program | slides.tex |
 | 23 | 20:00–20:00 | The Next Neurotech Founders | Existing divider |
 | 24 | 20:00–21:15 | McGill NeuroTech: student-built TMS research hardware | future.tex |
-| 25 | 21:15–22:15 | Build an MRI: Johns Hopkins, September 16--18 | future.tex |
-| 26 | 22:15–23:45 | The second wave: Neuralink and new founders | New: second-wave-intro.tex |
-| 27 | 23:45–24:45 | A third wave of BCI: non-invasive, multi-target | New: third-wave-intro.tex |
-| 28 | 24:45–25:45 | Biopunk Lab: a home for synthetic neurobiology | future.tex |
-| 29 | 25:45–27:15 | What would make these ambitions possible? | slides.tex |
-| 30 | 27:15–28:15 | A founder can also be a community contributor | slides.tex |
-| 31 | 28:15–28:45 | Acknowledgements | slides.tex |
-| 32 | 28:45–29:45 | What can we build and learn together? | slides.tex |
+| 25 | 21:15–22:15 | More ambitious student projects: quantum sensors | future.tex |
+| 26 | 22:15–23:15 | Build an MRI: Johns Hopkins, September 16--18 | future.tex |
+| 27 | 23:15–24:45 | The second wave: Neuralink and new founders | New: second-wave-intro.tex |
+| 28 | 24:45–25:45 | A third wave of BCI: non-invasive, multi-target | New: third-wave-intro.tex |
+| 29 | 25:45–26:45 | Biopunk Lab: a home for synthetic neurobiology | future.tex |
+| 30 | 26:45–28:15 | The future of neurobiotech: community wetware (Mind in Vitro) | future.tex |
+| 31 | 28:15–29:45 | What would make these ambitions possible? | slides.tex |
+| 32 | 29:45–30:45 | A founder can also be a community contributor | slides.tex |
+| 33 | 30:45–31:15 | Acknowledgements | slides.tex |
+| 34 | 31:15–32:15 | What can we build and learn together? | slides.tex |
 
 Sources above are relative to this talk directory. Existing citations and image credits are retained on the selected slides; detailed provenance remains in the full deck and asset source files. Earlier unresolved image requests (Paris CRI/LPI Hacknight photo and student-club logo graphic) have not been silently substituted.
 
 ## Optional 20-minute delivery
 
-Skip slides 12, 13, 15, 16, 17, 22, 24, 25 and 28 (Content Lab, newsletter, EEG-ExPy, MOABB, DLEEG summary, microcredential, TMS, MRI, Biopunk Lab): saves 8:45. Trim 30 seconds each from the second- and third-wave discussions: **20:00**. Keep the chapter-building examples, student competition, student project, Global NeuroHack and closing invitation.
+Skip slides 12, 13, 15, 16, 17, 22, 24, 25, 26, 29 and 30 (Content Lab, newsletter, EEG-ExPy, MOABB, DLEEG summary, microcredential, TMS, quantum sensors, MRI, Biopunk Lab, Mind in Vitro): saves 11:15. Trim 30 seconds each from the second- and third-wave discussions: **20:00**. Keep the chapter-building examples, student competition, student project, Global NeuroHack and closing invitation.
 
 ## Second-wave bridge
 

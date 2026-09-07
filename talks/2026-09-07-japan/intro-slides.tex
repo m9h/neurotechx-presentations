@@ -383,6 +383,21 @@
 \end{frame}
 
 % Selected from future.tex
+\begin{frame}{More ambitious student projects: quantum sensors}
+  \begin{columns}[c,onlytextwidth]
+    \column{.51\textwidth}
+      \small
+  \NTXPoint{A starting point already exists}{Uncut Gem: an open-source diamond magnetometer from Quantum Village.}
+  \NTXPoint{A student challenge}{Build the instrument, characterize its noise, and publish reproducible measurements.}
+  \NTXPoint{A longer-term neurotech question}{What would it take to move from a magnetic-field demonstration to useful biosignal sensing?}
+    \column{.45\textwidth}
+      \includegraphics[width=\linewidth,height=45mm,keepaspectratio]{assets/history/uncut-gem-prototype.jpeg}\par\smallskip
+      {\scriptsize Uncut Gem prototype\newline Photo: \href{https://quantumvillage.org/uncut-gem.html}{Quantum Village}\par}
+  \end{columns}
+  \NTXSource{https://arxiv.org/abs/2509.18329}{Carney and Kumaran: Uncut Gem; proposed student challenge, not an announced NTX program}
+  \note{[21:15--22:15] Nitrogen-vacancy centers in diamond provide a concrete route into quantum sensing. The project publishes hardware and firmware. This is a learning platform, not a demonstrated brain scanner. Propose characterization and reproducibility as meaningful student contributions. Brain-field sensitivity is a separate research challenge; do not imply that assembling this kit produces an MEG instrument. Work requires appropriate equipment training and supervision.}
+\end{frame}
+
 \begin{frame}{Build an MRI: Johns Hopkins, September 16--18}
   \begin{columns}[c,onlytextwidth]
     \column{.50\textwidth}
@@ -396,7 +411,7 @@
   \end{columns}
   \NTXSource{https://delta-diy-mri.github.io/}{delta-diy-mri.github.io --- September 16--18, 2026; waitlist and resources}
   
-  \note{[21:15--22:15] An immediate external opportunity: DELTA DIY-MRI at Johns Hopkins, September 16--18, 2026, nine days after this presentation. Free attendance but currently sold out, with a waitlist. Public build resources and the community are also available. The photo is from an earlier workshop. The program uses mentored construction and phantom imaging, not human scanning; it is not an NTX event.}
+  \note{[22:15--23:15] An immediate external opportunity: DELTA DIY-MRI at Johns Hopkins, September 16--18, 2026, nine days after this presentation. Free attendance but currently sold out, with a waitlist. Public build resources and the community are also available. The photo is from an earlier workshop. The program uses mentored construction and phantom imaging, not human scanning; it is not an NTX event.}
 \end{frame}
 \input{talks/2026-09-07-japan/second-wave-intro}
 \input{talks/2026-09-07-japan/third-wave-intro}
@@ -422,10 +437,24 @@
       \par\smallskip{\scriptsize Lab work and community workshop\par}
   \end{columns}
   {\tiny\color{NTXMuted}Activities: Morgan Hough's firsthand account. Photos and logo: \href{https://biopunklab.com/}{Biopunk Lab}\par}
-  \note{[24:45--25:45] Bring the future discussion back to a physical community lab. Morgan is a founding member working on synthetic neurobiology and reports that Neurotech@Berkeley's wetware group uses Biopunk Lab as its cell culture facility. Describe replication efforts inspired by Mind in Vitro and DishBrain, not completed replication or demonstrated learning results. Those are distinct research projects, not interchangeable names for one experiment. Facilities, mentors, biosafety and ethical oversight matter. The photographs show lab work and a workshop, with the official Biopunk Lab logo. This is another way students can gain access to more ambitious research with appropriate supervision.}
+  \note{[25:45--26:45] Bring the future discussion back to a physical community lab. Morgan is a founding member working on synthetic neurobiology and reports that Neurotech@Berkeley's wetware group uses Biopunk Lab as its cell culture facility. Describe replication efforts inspired by Mind in Vitro and DishBrain, not completed replication or demonstrated learning results. Those are distinct research projects, not interchangeable names for one experiment. Facilities, mentors, biosafety and ethical oversight matter. The photographs show lab work and a workshop, with the official Biopunk Lab logo. This is another way students can gain access to more ambitious research with appropriate supervision.}
 \end{frame}
 
 % Selected from slides.tex
+\begin{frame}{The future of neurobiotech: community wetware}
+  \centering
+  \includegraphics[width=.91\linewidth,height=28mm,keepaspectratio]{assets/history/mind-in-vitro-overview.jpg}
+  \par\smallskip
+  \raggedright
+  {\small
+  \textbf{Mind in Vitro as a starting point} --- Open hardware for interfacing with living neurons.\par\smallskip
+  \textbf{Working with Open Ephys} --- Developing a low-cost MEA/bioreactor for neuronal stimulation and recording.\par\smallskip
+  \textbf{Neurotech@Berkeley wetware at Biopunk Lab} --- Using the cell-culture facility to pursue replication, guided by DishBrain and follow-up studies.\par}
+  \medskip
+  {\tiny\color{NTXMuted}Image: \href{https://gazzolalab.github.io/MiV-OH/overview/system_overview.html}{MiV-OH / Gazzola Lab}; \href{https://doi.org/10.1002/advs.202306826}{Zhang et al., 2024}; \href{https://doi.org/10.1016/j.neuron.2022.09.001}{DishBrain, 2022}; local work: Morgan Hough\par}
+  \note{[26:45--28:15] Morgan reports collaboration with Open Ephys toward a low-cost MEA/bioreactor and Berkeley wetware's current use of Biopunk Lab for cell culture. These are firsthand accounts, not independently verified institutional announcements. The image is the Illinois MiV design, not a completed local device. MiV uses custom MEAs, Intan headstages, Open Ephys acquisition, and modular stimulation/fluidic interfaces. DishBrain (Kagan et al., Neuron 2022) uses a different high-density MEA platform for closed-loop Pong experiments. Follow-ups: Habibollahi et al., Nature Communications 2023, on critical dynamics; Khajehnejad et al., 2024 preprint arXiv:2405.16946, on sample efficiency. Full citations are in assets/history/mind-in-vitro-sources.md. Hardware replication is distinct from reproducing behavioral results; no completed Berkeley replication, learning, or sentience result is claimed. Appropriate cell provenance, biosafety, and ethical oversight remain necessary.}
+\end{frame}
+
 \begin{frame}{What would make these ambitions possible?}
   \begin{columns}[c,onlytextwidth]
     \column{.50\textwidth}
@@ -438,7 +467,7 @@
       {\scriptsize Facilities and people to learn with\newline Photo: \href{https://biopunklab.com/}{Biopunk Lab}\par}
   \end{columns}
   
-  \note{[25:45--27:15] Bring the future discussion back to the community. Morgan's proposed priorities are access to mentors and facilities, documented projects that survive student turnover, and a route to the next experiment. These are priorities to work toward, not promises that access or funding is already secured. For Japan, invite existing labs, makerspaces and university groups to contribute a bounded project, expertise or equipment access.}
+  \note{[28:15--29:45] Bring the future discussion back to the community. Morgan's proposed priorities are access to mentors and facilities, documented projects that survive student turnover, and a route to the next experiment. These are priorities to work toward, not promises that access or funding is already secured. For Japan, invite existing labs, makerspaces and university groups to contribute a bounded project, expertise or equipment access.}
 \end{frame}
 
 % Selected from slides.tex
@@ -454,7 +483,7 @@
       {\scriptsize Start by working on something together\newline Original SF Hacknights --- Morgan's photo\par}
   \end{columns}
   
-  \note{[27:15--28:15] Founders can bring useful questions, reproducible examples, teaching and mentoring. Relationships form through doing work together. Community support is reciprocal; this is not a promise of investment, clinical access, regulatory services or cofounder matching.}
+  \note{[29:45--30:45] Founders can bring useful questions, reproducible examples, teaching and mentoring. Relationships form through doing work together. Community support is reciprocal; this is not a promise of investment, clinical access, regulatory services or cofounder matching.}
 \end{frame}
 
 \section{Acknowledgements}
@@ -491,7 +520,7 @@
   \medskip
   {\tiny\color{NTXMuted}Portraits: \href{https://www.camh.ca/en/science-and-research/science-and-research-staff-directory/john-griffths}{CAMH}; \href{https://neurotechmicrocreds.com/our-team/susan-boehnke-phd/}{Queen's NeuroTech Microcredential Program}\par}
 
-  \note{[28:15--28:45] Thank the board, officers, content team, chapter organizers and open-source contributors shown here. The full deck contains detailed name and portrait provenance. Keep this brief and finish on the invitation.}
+  \note{[30:45--31:15] Thank the board, officers, content team, chapter organizers and open-source contributors shown here. The full deck contains detailed name and portrait provenance. Keep this brief and finish on the invitation.}
 \end{frame}
 
 \section{Join the community}
@@ -515,5 +544,5 @@
   \medskip
   {\small Morgan Hough \quad \href{mailto:mhough@neurotechx.com}{mhough@neurotechx.com}\par}
 
-  \note{[28:45--29:45] Invite people to join NTX Slack and write to Morgan. Ask what existing groups in Japan could build together, who can host a recurring gathering, and which student project could continue after its first demo. The slides repository is public: the QR code opens the source and downloadable PDFs. Planned remarks end at 29:45; allow questions within the remaining event slot.}
+  \note{[31:15--32:15] Invite people to join NTX Slack and write to Morgan. Ask what existing groups in Japan could build together, who can host a recurring gathering, and which student project could continue after its first demo. The slides repository is public: the QR code opens the source and downloadable PDFs. Planned remarks end at 32:15; allow questions within the remaining event slot.}
 \end{frame}
