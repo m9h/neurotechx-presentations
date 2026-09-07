@@ -15,10 +15,10 @@
     ItalicFont=texgyreheros-italic.otf,
     BoldItalicFont=texgyreheros-bolditalic.otf]
 \fi
-\definecolor{NTXPaper}{HTML}{FFFBF0}
-\definecolor{NTXInk}{HTML}{282828}
-\definecolor{NTXMuted}{HTML}{64645F}
-\definecolor{NTXTeal}{HTML}{376C68}
+\definecolor{NTXPaper}{HTML}{000000}
+\definecolor{NTXInk}{HTML}{FFFFFF}
+\definecolor{NTXMuted}{HTML}{B8B8B8}
+\definecolor{NTXTeal}{HTML}{B8B8B8}
 % Compatibility aliases for presentations using the original helpers.
 \colorlet{NTXWhite}{NTXPaper}
 \colorlet{NTXSurface}{NTXPaper}
@@ -42,18 +42,31 @@
   \ifx\insertframesubtitle\@empty\else
     {\small\color{NTXMuted}\insertframesubtitle\par}%
   \fi\vspace{5mm}}
-\newcommand{\NTXWordmark}{{\bfseries NeuroTechX}}
+\newcommand{\NTXLogo}[1][28mm]{\includegraphics[width=#1]{assets/brand/neurotechx-logo.png}}
+\newcommand{\NTXWordmark}{\NTXLogo[40mm]}
 \newcommand{\NTXSource}[2]{\par\vspace{3mm}{\tiny\color{NTXMuted}\href{#1}{#2}\par}}
 \newcommand{\NTXTakeaway}[1]{\par\vspace{4mm}{\large\bfseries #1\par}}
 \newcommand{\NTXCard}[2]{\begin{block}{#1}#2\end{block}}
 \newcommand{\NTXPoint}[2]{\textbf{#1}\par #2\par\medskip}
+% Reusable, quiet section divider: title and NeuroTechX logo only.
+\newcommand{\NTXDivider}[1]{%
+  \begingroup
+  \setbeamertemplate{footline}{%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=7mm,dp=2mm,leftskip=10mm]{footline}
+      \NTXLogo[25mm]
+    \end{beamercolorbox}}
+  \begin{frame}[c]
+    \centering{\Huge\bfseries #1\par}
+    \note{Brief section transition, included in the adjacent speaking time.}
+  \end{frame}
+  \endgroup}
 \setbeamertemplate{footline}{%
-  \begin{beamercolorbox}[wd=\paperwidth,ht=4mm,dp=2mm,leftskip=10mm,rightskip=10mm]{footline}
-  \tiny NeuroTechX\hfill\insertsectionhead\hfill\insertframenumber
+  \begin{beamercolorbox}[wd=\paperwidth,ht=7mm,dp=2mm,leftskip=10mm,rightskip=10mm]{footline}
+  \NTXLogo[25mm]\hfill\tiny\insertsectionhead\hfill\insertframenumber
   \end{beamercolorbox}}
 \setbeamertemplate{title page}{%
   \vspace*{5mm}
-  {\large\NTXWordmark\par}\vspace{9mm}
+  {\NTXLogo[42mm]\par}\vspace{6mm}
   {\usebeamerfont{title}\inserttitle\par}\vspace{4mm}
   {\large\color{NTXMuted}\insertsubtitle\par}\vfill
   {\insertauthor\par}\vspace{2mm}

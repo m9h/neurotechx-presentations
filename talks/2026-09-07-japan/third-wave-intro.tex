@@ -1,0 +1,22 @@
+\begin{frame}{A third wave of BCI: non-invasive, multi-target}
+  \framesubtitle{An emerging direction}
+  \begin{columns}[c,onlytextwidth]
+    \column{.56\textwidth}
+      \fontsize{9.5}{11}\selectfont
+      \NTXPoint{Beyond one signal, one function}{Combine distributed signals and context; aim for multiple useful readouts, not only a single control task.}
+      \NTXPoint{Neural foundation models (NeuroFMs)}{Shared representations across recordings, regions, and tasks are becoming a research tool.}
+      \NTXPoint{Non-invasive routes remain central}{BrainOmni learns across EEG and MEG; POYO+ demonstrates multi-task transfer in mouse imaging.}
+    \column{.40\textwidth}
+      \centering
+      {\small\textbf{The opportunity}\par}\smallskip
+      \fbox{\parbox{.86\linewidth}{\centering\small Distributed neural signals\\+ behavioral context}}
+      \par\smallskip $\downarrow$ \par\smallskip
+      \fbox{\parbox{.86\linewidth}{\centering\small Shared representation}}
+      \par\smallskip $\downarrow$ \par\smallskip
+      {\small Multiple task-specific readouts\par}
+      \medskip{\tiny Conceptual direction, not a validated product\par}
+  \end{columns}
+  \smallskip{\scriptsize\color{NTXMuted}Opportunity for the community: open data, strong baselines, and reproducible cross-person evaluation.\par}
+  {\tiny\color{NTXMuted}Sources: \href{https://arxiv.org/abs/2505.18185}{BrainOmni, NeurIPS 2025}; \href{https://poyo-plus.github.io/}{POYO+, ICLR 2025}; \href{https://doi.org/10.1038/s41586-025-09235-0}{IBL brain-wide map, Nature 2025}\par}
+  \note{[23:45--24:45] Historical framing: consumer headsets brought people together; the second wave renewed implant visibility, including Neuralink; the third points toward non-invasive, multi-target functionality. These waves overlap. Multi-target here means distributed neural sources and multiple functional readouts, not demonstrated multi-site stimulation. NeuroFMs means neural foundation models broadly. Keep the evidence separate: IBL found distributed sensory, choice, movement and reward correlates in mouse Neuropixels recordings; this was not a foundation-model study. POYO+ learned representations transferable across regions and cell types with multiple decoding tasks in mouse two-photon imaging, not non-invasive human BCI. BrainOmni provides the EEG/MEG example, with downstream and cross-device evaluation. Together they motivate the conceptual diagram; they do not establish one integrated, general-purpose real-time BCI. Complex behavior remains constrained by signal quality, context and training data. Community contributions include open data, reproducibility, classical baselines and held-out-person tests. Consent and neural-data privacy matter. Detailed research boundaries and links are in INTRO-JAPAN-2026.md.}
+\end{frame}

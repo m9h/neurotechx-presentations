@@ -1,87 +1,293 @@
 \begin{frame}[plain]
   \titlepage
-  \note{[0:00--1:00] Introduce yourself as Morgan Hough, Executive Director of NeuroTechX. Thank the organizers. This talk is about NeuroTechX: what it is, what we do, how that work contributes to the community, and what it can mean for people building neurotech companies. The Tokyo meeting is the audience context.}
+  \note{[00:00--00:30] Introduce yourself as Morgan Hough, Executive Director of NeuroTechX. Thank the organizers. This talk is about NeuroTechX: what it is, what we do, how that work contributes to the community, and what it can mean for people building neurotech companies. The Tokyo meeting is the audience context.}
 \end{frame}
 
+\input{talks/2026-09-07-japan/biography}
+
 \section{What is NeuroTechX?}
+\NTXDivider{What is NeuroTechX?}
 \begin{frame}{What is NeuroTechX?}
-  \NTXPoint{A nonprofit community}{Bringing together people interested in neuroscience and technology.}
-  \NTXPoint{Local beginnings, international connections}{Founded in Montr\'eal in 2015; connected through city chapters, student groups, and open projects.}
-  \NTXPoint{Three pillars}{Community, education, and professional development.}
-  \NTXSource{https://www.neurotechx.org/about}{NeuroTechX: Our Story}
-  \note{[1:00--2:30] Your original deck describes the organization as originally Societe BCI de Montreal and then a global community. The public history dates NeuroTechX's founding to 2015. Introduce the purpose without membership totals or superlatives. The exact legal history is not expanded beyond your supplied account.}
+  \begin{columns}[T,onlytextwidth]
+    \column{.52\textwidth}
+      \NTXPoint{A nonprofit community}{Connecting neuroscience and technology.}
+      \NTXPoint{Founded in Montr\'eal in 2015}{City chapters, student groups, and open projects.}
+      \NTXPoint{Three pillars}{Community, education, and professional development.}
+    \column{.43\textwidth}
+      \includegraphics[width=\linewidth,height=47mm,keepaspectratio]{assets/people/neurotechx-instagram-1.png}
+      \par\smallskip{\scriptsize Sydney Swaine-Simon and Yannick Roy\par}
+  \end{columns}
+  \NTXSource{https://www.neurotechx.org/about}{NeuroTechX: Our Story; photo from NeuroTechX's Instagram archive}
+  \note{[03:30--04:30] Your original deck describes the organization as originally Societe BCI de Montreal and then a global community. The public history dates NeuroTechX's founding to 2015. Introduce the purpose without membership totals or superlatives. The exact legal history is not expanded beyond your supplied account.}
 \end{frame}
 
 \begin{frame}{What do we do?}
-  \NTXPoint{Bring people together}{Chapter meetings, hacknights, student communities, and hackathons.}
-  \NTXPoint{Make learning accessible}{The NeuroTech Primer, workshops, webinars, and practical experiments.}
-  \NTXPoint{Build and share tools}{EEG-ExPy, MOABB, and contributions across the open neurotechnology ecosystem.}
-  \NTXSource{https://www.neurotechx.org/education}{NeuroTechX: education and developer resources; Morgan's original presentation}
-  \note{[2:30--3:30] This is the overview of the activities in your original slides. The next section makes each concrete. Be careful to distinguish NeuroTechX projects from independent tools our community uses or contributes to.}
+  \begin{columns}[c,onlytextwidth]
+    \column{.43\textwidth}
+      \small
+      \NTXPoint{Community building}{Chapter meetings, hacknights, student chapters, hackathons, and student competitions.}
+      \NTXPoint{Make learning accessible}{The NeuroTech Primer, workshops, webinars, and open science.}
+      \NTXPoint{Build and share tools}{EEG-ExPy, MOABB, and contributions across open neurotechnology.}
+    \column{.53\textwidth}
+      \includegraphics[width=\linewidth,height=49mm,keepaspectratio]{assets/history/neurotechx-github-org.png}
+      \par\smallskip{\scriptsize \href{https://github.com/NeuroTechX}{github.com/NeuroTechX}\par}
+  \end{columns}
+  {\tiny\color{NTXMuted}Sources: \href{https://www.neurotechx.org/education}{NeuroTechX education}; GitHub organization homepage, captured September 6, 2026\par}
+  \note{[04:30--05:30] This is the overview of the activities in your original slides. The next section makes each concrete. The image is an authentic logged-out screenshot of the NeuroTechX GitHub organization homepage, captured September 6, 2026. Point to the shared organization as a place where community work becomes accessible code and resources. Page counters and profile claims are a snapshot, not audited totals or additional claims in this talk. Distinguish NeuroTechX projects from independent tools our community uses or contributes to.}
 \end{frame}
 
 \section{What do we do?}
-\begin{frame}{NeuroTechSF: the weekly hacknight}
-  \NTXPoint{A recurring place to meet}{Newcomers welcome alongside people already working on projects.}
-  \NTXPoint{In-person and remote participation}{Our chapter's format includes online participation, livestreaming, and recordings.}
-  \NTXPoint{Something to work on together}{Hardware for hacking, experiments, software, and help from peers.}
-  \NTXSource{https://lu.ma/neurotechsf/}{NeuroTechSF events; format described in Morgan's original slides}
-  \note{[3:30--5:00] Use your experience of the SF hacknight. The original deck describes Wednesday meetings, Jitsi participation, livestreaming, YouTube archives, and hardware access. We omit the exact weekly time because this is a historical account rather than a current event listing. Explain what a newcomer actually encounters. No retention rate or success story has been inferred.}
+\NTXDivider{Community Building}
+\input{talks/2026-09-07-japan/first-wave-bci}
+\begin{frame}{A community across the world}
+  \centering
+  \includegraphics[width=\linewidth,height=55mm,keepaspectratio]{assets/chapters/neurotechx-community-map.png}
+  \par\smallskip
+  {\tiny\color{NTXMuted}\href{https://www.neurotechx.org/community}{NeuroTechX Community \& Chapters} --- website snapshot, September 6, 2026\par}
+  \note{[07:00--07:30] Use the map to orient the audience before telling the local chapter histories. This is an authentic screenshot of the official community page, cropped to its map and original legend. It shows the geographic distribution of listings, not membership density or an audited count of active chapters. The legend distinguishes active, restarting, coming soon, inactive, and student club listings. A marker does not by itself establish that a chapter is currently running events.}
 \end{frame}
 
-\begin{frame}{EEG-ExPy: a shared experiment}
-  \begin{columns}[c,onlytextwidth]
-    \column{.35\textwidth}
-      \textbf{EEG experiments in Python}\par\medskip
-      A project people can run, inspect, and help improve.\par\medskip
-      Experiment design connects with software and data collection.
-    \column{.61\textwidth}
-      \includegraphics[width=\linewidth,trim=0 85 0 0,clip]{assets/history/original-slide-10.pdf}
+\begin{frame}{Dans le vent}
+  \framesubtitle{Local communities before NeuroTechX}
+  \begin{columns}[T,onlytextwidth]
+    \column{.47\textwidth}
+      \textbf{San Francisco}\par\smallskip
+      {\small Cognitive Technology Group\par}
+      \includegraphics[width=\linewidth,height=28mm,keepaspectratio]{assets/chapters/san-francisco-original-hacknight.jpg}\par\smallskip
+      {\small An existing community that became part of NeuroTechX\par}
+      {\tiny Original SF Hacknights --- photo supplied by Morgan\par}
+    \column{.47\textwidth}
+      \textbf{Paris}\par\smallskip
+      {\small CogLab --- September 2013\par}
+      \includegraphics[width=\linewidth,height=28mm,keepaspectratio]{assets/chapters/la-paillasse-mitch-altman-2013.jpg}\par\smallskip
+      {\small Launched by Romain Rouyer; incubated at La Paillasse\par}
+      {\tiny La Paillasse, July 2013 --- \href{https://www.flickr.com/photos/maltman23/9379676390/}{Mitch Altman}, \href{https://creativecommons.org/licenses/by-sa/2.0/}{CC BY-SA 2.0}\par}
   \end{columns}
-  \NTXSource{https://github.com/NeuroTechX/EEG-ExPy}{EEG-ExPy; experiment illustration from Morgan's original slide 10}
-  \note{[5:00--6:30] Explain EEG-ExPy using your original material. The screenshot is the PsychoPy experiment interface from your deck, used as an illustration of experiment design. It is not presented as a new EEG-ExPy interface or validation result. Avoid repeating the old deck's broad platform and headset compatibility list without version-specific testing.}
+  {\tiny\color{NTXMuted}Sources: \href{https://github.com/Cognitive-Technology-Group}{Cognitive Technology Group archive}; \href{https://coglab.fr/about/coglab/}{CogLab: Gen\`ese}; Morgan Hough\par}
+  \note{[07:30--08:15] Morgan identifies Cognitive Technology Group as the SF predecessor and CogLab as predating NeuroTechX Paris. CogLab's history dates its launch by Romain Rouyer to September 2013 and describes incubation at La Paillasse, collaboration with FRESCO and HackYourPhD, and accessible multidisciplinary experimentation. Morgan still cohosts Paris Hacknights. The SF archive contains EEG repositories created in 2014; these are not founding or affiliation dates. Neither chapter's formal transition date is asserted.}
 \end{frame}
 
-\begin{frame}{Citizen science: from recording to analysis}
-  \begin{columns}[c,onlytextwidth]
-    \column{.35\textwidth}
-      \textbf{Participation can include the experiment itself.}\par\medskip
-      Our examples include N170 experiments and resting-state recordings.\par\medskip
-      Looking at the signal is part of learning how to collect it.
-    \column{.61\textwidth}
-      \includegraphics[width=\linewidth,trim=0 65 0 0,clip]{assets/history/original-slide-11.pdf}
+\input{talks/2026-09-07-japan/history/chapter-histories}
+
+\begin{frame}{NeuroTechX Hacknights}
+  \begin{columns}[T,onlytextwidth]
+    \column{.52\textwidth}
+      \NTXPoint{A recurring place to meet}{Newcomers and people already working on projects.}
+      \NTXPoint{Across chapters}{San Francisco, Paris, and other local communities.}
+      \NTXPoint{Work together}{Hardware, experiments, software, and help from peers.}
+    \column{.43\textwidth}
+      \includegraphics[width=\linewidth,height=47mm,keepaspectratio]{assets/chapters/san-francisco-original-hacknight.jpg}
+      \par\smallskip{\scriptsize Original San Francisco Hacknights\par}
   \end{columns}
-  \NTXSource{https://docs.google.com/presentation/d/1TjLbvGQzA-wy0sNWeTrw_2A7cbOmr_JNhvvXQkZjr14/edit}{Morgan's original presentation: citizen science and EEG analysis}
-  \note{[6:30--8:00] Describe the citizen-science work from your own experience. The figure is your original N170 recording and analysis screenshot. It shows inspection of data, not evidence of a population-level finding or a validated application. The old slide's proposed uploads and cloud support are not represented as services currently promised by NeuroTechX.}
+  {\tiny\color{NTXMuted}Photo supplied and identified by Morgan Hough\par}
+  \note{[14:45--15:30] Hacknights are a NeuroTechX format, not only a San Francisco activity. This photograph shows the original SF hacknights, identified by Morgan and supplied as Image-1.jpg. Morgan also still cohosts the Paris Hacknights. Explain what a newcomer actually encounters: hardware, open science, software, and help from peers. Do not infer a date or identify individual participants from the photograph.}
 \end{frame}
 
-\begin{frame}{MOABB: making BCI comparisons reproducible}
-  \textbf{Mother of All BCI Benchmarks}\par\medskip
-  An open framework for comparing algorithms on public EEG datasets.\par\bigskip
-  \textbf{A concrete research contribution}\par\medskip
-  The 2024 benchmark study evaluated 30 machine-learning pipelines\\
-  across 36 datasets, covering motor imagery, P300, and SSVEP.\par\bigskip
-  Shared implementations and evaluation methods give other\\
-  researchers a starting point they can inspect and reproduce.
-  \NTXSource{https://arxiv.org/abs/2404.15319}{Chevallier et al., 2024, arXiv:2404.15319}
-  \note{[8:00--10:00] MOABB is an example of community work producing a research artifact beyond a single event. The numerical scope is specific to the cited 2024 study, not today's dataset total. Credit the contributors. Do not generalize the study into a claim that a particular algorithm always wins or that benchmark performance establishes clinical utility.}
+\begin{frame}{Buzz-in-Review: a shared annual chapter event}
+  \begin{columns}[c,onlytextwidth]
+    \column{.45\textwidth}
+      \small
+      \NTXPoint{The year in neurotechnology}{News and research for the general public.}
+      \NTXPoint{Shared content, local conversations}{A common review for chapters to present and discuss.}
+      \NTXPoint{A global format}{2021: 19 chapters across 10 online events.}
+    \column{.51\textwidth}
+      \includegraphics[width=\linewidth,height=45mm,keepaspectratio]{assets/chapters/montreal-buzz-in-review-2020.jpg}
+      \par\smallskip{\scriptsize In person in Montr\'eal --- January 2020\par}
+  \end{columns}
+  {\tiny\color{NTXMuted}Sources: \href{https://neurotechx.com/ntxbir2021/}{Buzz in Review 2021}; photo: \href{https://twitter.com/NeuroTechMTL/status/1215643104847503363}{NeuroTechMTL}; \href{https://www.mcgill.ca/hbhl/channels/event/neurotech-buzz-review-2020-303563}{McGill / HBHL event listing}\par}
+  \note{Photo: NeuroTechMTL's contemporaneous post identifies the in-person Montreal Buzz in Review 2020 event and HBHL's introduction. Retrieved via a public archive of the chapter's post; the original media URL was checked. McGill independently lists the January 9, 2020 event at New Residence Hall. The pictured event is distinct from the online 2021 program described in the text.}
+  \note{[15:30--17:00] Morgan describes the annual event as providing city chapters with news and research for the general public. The 2021 event page lists 19 chapters and 10 online events; these are program figures, not audience counts. Explain how shared review material supports local public-facing conversations. Do not claim every chapter participates every year or that every event follows the same format.}
 \end{frame}
+
+\begin{frame}{NeuroTechX Content Laboratory}
+  \begin{columns}[c,onlytextwidth]
+    \column{.46\textwidth}
+      \small
+      \NTXPoint{Writers, editors, and designers}{Original articles and varied perspectives on neurotechnology.}
+      \NTXPoint{Another way to contribute}{Explain the field, share a project story, or edit someone else's work.}
+      \NTXPoint{A recent example}{The Future of Brain Medicine with Owen Muir\\Interview by Chay Carter, May 2026}
+    \column{.50\textwidth}
+      \includegraphics[width=\linewidth,height=40mm,keepaspectratio]{assets/history/content-lab-owen-interview.jpg}
+      \par\smallskip{\scriptsize Original interview artwork: The Open Loop / Carter Sciences\par}
+  \end{columns}
+  {\tiny\color{NTXMuted}\href{https://medium.com/neurotechx/the-future-of-brain-medicine-with-owen-muir-a02360f770d5}{Read the Content Lab article}; \href{https://medium.com/neurotechx}{medium.com/neurotechx}; \href{https://www.youtube.com/watch?v=1ooyWf79Vyo}{original interview / image}\par}
+  \note{[17:00--18:30] The publication brings together writers, editors, and designers. Community participation also includes communicating and explaining the work. The example is Chay Carter's interview with Owen Muir, published by the Content Lab on May 18, 2026. Medium blocked direct image retrieval and browser capture, so the visual is artwork from the original Open Loop interview, not a screenshot of Medium. Carter's own public post links the Medium version, and Muir's May 14 post embeds the original video. Credit The Open Loop / Carter Sciences. This illustrates an editorial contribution; it does not endorse clinical claims in the interview or imply the independent podcast is owned by NeuroTechX.}
+\end{frame}
+
+\begin{frame}{The NeuroTechX newsletter: a long-running community resource}
+  \begin{columns}[c,onlytextwidth]
+    \column{.46\textwidth}
+      \small
+      \NTXPoint{An archive reaching back to 2015}{November 2015: NeuroTechX Digest \#1.}
+      \NTXPoint{Keeping the community connected}{Research, industry developments, projects, events, and opportunities.}
+      \NTXPoint{A record of the field as it develops}{\href{https://neurotechx.org/newsletter}{neurotechx.org/newsletter}}
+    \column{.50\textwidth}
+      \includegraphics[width=\linewidth,height=40mm,keepaspectratio]{assets/history/ntx-newsletter-may2024.png}
+      \par\smallskip{\scriptsize May 2024 newsletter --- official archive artwork\newline Image: NeuroTechX\par}
+  \end{columns}
+  \NTXSource{https://neurotechx.org/newsletter}{NeuroTechX newsletter archive; earliest listed edition: November 2015}
+  \note{The image is NeuroTechX's May 2024 newsletter promotional collage from https://neurotechx.com/stay-tuned/, not a new screenshot or current issue. Original image filename: 20240522\_Newsletter-1024x512.png. It demonstrates the mix of community events, educational opportunities, research, and industry updates; dated headlines are not presented as current news.}
+  \note{[18:30--20:00] Morgan emphasizes the newsletter's longevity and its role in keeping the community informed. The public archive lists Digest 1 in November 2015, selected earlier editions, and monthly editions in later years. It does not establish uninterrupted publication or a field-wide longevity ranking. Neurotech Reports dates Neurotech Business Report to 2001, so it clearly predates NTX. Use the documented start of the archive rather than claim first or second longest-running. Discuss the editorial work of maintaining a shared resource across changing projects and cohorts.}
+\end{frame}
+
+\NTXDivider{Open Source Software Delivers}
+\begin{frame}{EEG-ExPy: roots in muse-lsl and eeg-notebooks}
+  \begin{columns}[T,onlytextwidth]
+    \column{.66\textwidth}
+      \NTXPoint{muse-lsl: access to the signal}{Alexandre Barachant's groundwork for streaming Muse EEG through Lab Streaming Layer.}
+      \NTXPoint{eeg-notebooks: build the experiment}{Community-developed protocols combining recording, stimulus presentation, and analysis.}
+      \NTXPoint{EEG-ExPy: carry the work forward}{John Griffiths and contributors; PsychoPy for experiments, MNE for analysis.}
+    \column{.28\textwidth}
+      \includegraphics[width=\linewidth]{assets/people/john-griffiths.jpg}
+      \par\smallskip{\small John Griffiths\par}
+      \medskip{\scriptsize \href{https://www.crowdcast.io/e/brainhack-ontario/7}{Brainhack Ontario 2020\\introductory talk}\par}
+  \end{columns}
+  {\tiny\color{NTXMuted}Sources: \href{https://github.com/NeuroTechX/EEG-ExPy}{EEG-ExPy history and credits}; \href{https://www.grifflab.com/code_and_software/eeg-notebooks/}{Griffiths, 2019}; portrait: CAMH\par}
+  \note{[20:00--21:15] The README credits Alexandre Barachant with the initial idea and much of the groundwork, including muse-lsl, and identifies John Griffiths as lead developer alongside many contributors. eeg-notebooks was later renamed EEG-ExPy; muse-lsl is a foundational dependency, not an earlier name for the same project. John's January 4, 2019 lab account describes the NTX/InterAxon connection, Brainhack experimentation, and educational use through NeuroBRITE and BrainWaves. Archived v0.2 documentation identifies his Brainhack Ontario 2020 introductory presentation and links the Crowdcast recording. The recording could not be retrieved during this edit; no quotation, screenshot, or claim about its specific contents is made. The original PsychoPy illustration has been removed from this slide, but its asset remains in the repository.}
+\end{frame}
+
+\begin{frame}{BrainFlow: shared access to more devices}
+  \begin{columns}[c,onlytextwidth]
+    \column{.53\textwidth}
+      \small
+  \NTXPoint{A common biosignal interface}{An open-source library for acquiring and processing EEG, EMG, ECG, and other sensor data.}
+  \NTXPoint{Broader hardware access for EEG-ExPy}{Its device layer includes BrainFlow routes for OpenBCI, FreeEEG32, Muse, and other devices.}
+  \NTXPoint{Build on each other's work}{EEG-ExPy credits Andrey Parfenov and BrainFlow for expanding device support.}
+    \column{.43\textwidth}
+      \centering
+      {\small OpenBCI \quad FreeEEG32 \quad Muse\par}
+      {\Large $\downarrow$\par}
+      \fbox{\parbox{.88\linewidth}{\centering\textbf{BrainFlow}\par\small One acquisition API}}
+      \par{\Large $\downarrow$\par}
+      {\small Experiments \quad Analysis\newline Visualization\par}
+      \par\smallskip{\scriptsize Conceptual device-to-software interface\par}
+  \end{columns}
+  {\scriptsize muse-lsl and BrainFlow coexist in EEG-ExPy's device layer.\par}
+  \medskip
+  {\tiny\color{NTXMuted}Sources: \href{https://brainflow.readthedocs.io/en/stable/}{BrainFlow documentation}; \href{https://github.com/NeuroTechX/EEG-ExPy/blob/master/eegnb/devices/eeg.py}{EEG-ExPy device layer}; \href{https://github.com/NeuroTechX/EEG-ExPy}{project acknowledgements}\par}
+  \note{[21:15--22:45] BrainFlow is a separate open-source project, not an NTX-owned library. The EEG-ExPy README credits Andrey Parfenov and BrainFlow with expanding supported devices. The eegnb/devices/eeg.py module routes devices through BrainFlow or muse-lsl and includes OpenBCI variants, FreeEEG32, Muse variants, and a synthetic device. This is evidence of implemented integration, not a fresh end-to-end hardware compatibility test. A July 20, 2021 discussion records John considering BrainFlow's Muse support and native Bluetooth requirements; it does not date the initial integration or establish a completed migration then. Do not imply every BrainFlow-supported board is automatically supported by EEG-ExPy, that all boards perform equivalently, or that muse-lsl was entirely replaced. The community lesson is shared infrastructure enabling reuse across hardware.}
+\end{frame}
+
+
+
+\begin{frame}{Open-source hardware: making participation accessible}
+  \begin{columns}[c,onlytextwidth]
+    \column{.54\textwidth}
+      \small
+  \NTXPoint{Beyond low-cost EEG boards}{Access to instruments people can study, adapt, and improve.}
+  \NTXPoint{OpenEIT / Spectra --- Jean Rintoul}{Electrical impedance tomography: shared hardware, firmware, and reconstruction tools.}
+  \NTXPoint{un0rick --- Luc Jonveaux}{Low-cost, open ultrasound pulse-echo hardware for learning and research.}
+      {\scriptsize Jean and Luc both presented at CogLab / NeuroTechX Paris Hacknights.\par}
+    \column{.42\textwidth}
+      \centering
+      \includegraphics[width=\linewidth,height=23mm,keepaspectratio]{assets/history/spectra-kit.jpg}\par
+      {\tiny Spectra --- Mindseye Biomedical / Crowd Supply\par}\smallskip
+      \includegraphics[width=\linewidth,height=24mm,keepaspectratio]{assets/history/un0rick-bench.jpg}\par
+      {\tiny un0rick bench test --- \href{https://un0rick.cc/un0rick}{Luc Jonveaux / kelu124}\par}
+  \end{columns}
+  \medskip
+  {\tiny\color{NTXMuted}Sources: \href{https://www.crowdsupply.com/mindseye-biomedical/spectra}{Rintoul / Mindseye: Spectra}; \href{https://doi.org/10.5334/joh.28}{Jonveaux, Schloh, Meng, Arija \& Rintoul, 2022}; \href{https://coglab.fr/activites/hacknight/}{CogLab Hacknights}\par}
+  \note{[22:45--24:15] Morgan identifies support for low-cost EEG boards, OpenEIT, and ultrasound as part of NTX's contribution. CogLab's archive specifically lists Jean Rintoul presenting Spectra at HackNight 150 (June 8) and Luc Jonveaux presenting un0rick at HackNight 148 (May 18). This verifies community exposure and discussion, not funding or NTX ownership. Jean's OpenEIT documentation and Mindseye's December 5, 2019 Spectra update emphasize tutorials and lowering the entry barrier. She coauthored the 2022 Journal of Open Hardware review with Jonveaux, Schloh, Meng, and Arija. The lesson is that affordability needs documentation and people who can help newcomers. These are research and educational examples, not claims of clinical readiness, safe self-experimentation, or diagnostic equivalence. OpenEIT firmware includes noncommercial licensing restrictions: do not imply unrestricted commercial reuse. un0rick is the historical FPGA board; the project's current site also describes its newer pic0rick design.}
+\end{frame}
+
+\begin{frame}{OpenEIT: sharing the work with wider communities}
+  \begin{columns}[T,onlytextwidth]
+    \column{.49\textwidth}
+      \NTXPoint{Jean Rintoul at 34C3}{Low-cost biomedical imaging through electrical impedance tomography.}
+      \NTXPoint{OpenEIT at LIBRE Hub}{Sharing the principles, project history, and directions for accessible imaging.}
+      {\small Open tools need places where people can encounter them and learn.\par}
+    \column{.46\textwidth}
+      \includegraphics[width=\linewidth]{assets/people/jean-rintoul-34c3-speaking.jpg}
+      \par\smallskip{\scriptsize Jean Rintoul speaking at the\\34th Chaos Communication Congress\\27 December 2017\par}
+  \end{columns}
+  \medskip
+  {\tiny\color{NTXMuted}Frame: \href{https://media.ccc.de/v/34c3-8948-low_cost_non-invasive_biomedical_imaging}{CCC recording, 01:20}; \href{https://librehub.github.io/2025/12/02/jean-rintoul.html}{LIBRE Hub OpenEIT seminar}\par}
+  \note{[24:15--25:45] The image is a frame extracted at 01:20 from Jean's official 34C3 recording, Low Cost Non-Invasive Biomedical Imaging: An Open Electrical Impedance Tomography Project, dated December 27, 2017. This is an actual speaking image, not a generated portrait. LIBRE Hub separately lists her OpenEIT seminar and its scope. Its homepage advertises January 15, 2026 but the detail page says January 15, 2025 despite a December 2025 URL; omit the year until clarified. No accessible LIBRE Hub recording or speaking photograph was found, so this image is labeled only as Congress. These are external dissemination venues, not events claimed as organized by NTX.}
+\end{frame}
+
+\begin{frame}{Low-cost EEG: more ways to start building}
+  \begin{columns}[c,onlytextwidth]
+    \column{.57\textwidth}
+      \small
+      \NTXPoint{icibici --- Colin Rowat and collaborators}{Single-channel EEG via an audio connection.\newline Credits NeuroTechX and its Slack community.}
+      \NTXPoint{FreeEEG32}{Open-source, 32-channel acquisition.\newline Custom nets developed by Bernard Markus.}
+      \NTXPoint{Neurogate / OctaFlow}{EEG, EMG, and ECG acquisition;\newline connections to LSL and Timeflux.}
+    \column{.39\textwidth}
+      \centering
+      \includegraphics[width=\linewidth,height=21mm,keepaspectratio]{assets/history/freeeeg32-board.jpg}
+      \par{\tiny FreeEEG32 acquisition board\par}\smallskip
+      \includegraphics[height=25mm]{assets/people/bernard-markus-eeg-net.jpg}
+      \par{\tiny Bernard Markus wearing his EEG net\par}
+  \end{columns}
+  {\tiny\color{NTXMuted}Sources: \href{https://icibici.github.io/site/}{icibici}; \href{https://www.crowdsupply.com/neuroidss/freeeeg32}{FreeEEG32}; \href{https://neurogate.io/}{Neurogate / OctaFlow}\par}
+  \note{Photos: FreeEEG32 Crowd Supply campaign. Bernard Markus is identified in its team portrait, wearing his compatible net; no board connection is visible. Funded in 2021, the campaign now lists the board as discontinued. This is history, not a purchasing recommendation.}
+  \note{[25:45--27:15] Morgan identifies these as community-supported projects. icibici credits NeuroTechX, Slack, and London Hackspace; Colin Rowat presented it at the 2023 hackathon. It is an engineering kit, not a consumer product, and warns against mains-connected use. Avoid historical price or cheapest claims. FreeEEG32 documents open-source 32-channel acquisition. Neurogate currently presents OctaFlow with EEG/EMG/ECG, LSL, and Timeflux; do not apply current specifications to all historical devices. These examples do not imply equivalent performance, licensing, clinical readiness, or safety for self-experimentation.}
+\end{frame}
+
+\begin{frame}{Open fNIRS: from accessible kits to research systems}
+  \begin{columns}[c,onlytextwidth]
+    \column{.56\textwidth}
+      \small
+  \NTXPoint{HEGduino --- Josh Brewster / Brains@Play}{Accessible optical sensing and biofeedback hardware.}
+  \NTXPoint{OpenfNIRS}{Hardware, software, standards, and training; a directory including HEGduino and openNIRS.}
+  \NTXPoint{ninjaNIRS --- Boston University}{Open, wearable, high-density fNIRS; system design and performance published in 2024.}
+    \column{.40\textwidth}
+      \centering
+      \includegraphics[width=\linewidth,height=22mm,keepaspectratio]{assets/history/hegduino-v2.jpg}\par
+      {\tiny HEGduino V2 --- Alaskit / Crowd Supply\par}\smallskip
+      \includegraphics[width=\linewidth,height=23mm,keepaspectratio]{assets/history/ninjanirs-early-000.jpg}\par
+      {\tiny Early ninjaNIRS --- \href{https://sites.bu.edu/nil/files/2020/04/AlexanderOSA.pdf}{von L\"uhmann et al., 2020}\par}
+  \end{columns}
+  {\scriptsize Community support connects entry-level learning with research tools.\par}
+  {\tiny\color{NTXMuted}Sources: \href{https://www.crowdsupply.com/alaskit/hegduino-v2}{HEGduino V2}; \href{https://openfnirs.org/hardware/}{OpenfNIRS hardware}; \href{https://doi.org/10.1364/BOE.531501}{ninjaNIRS, Biomedical Optics Express, 2024}\par}
+  \note{[27:15--28:45] Morgan supplies the account of NTX support for Josh Brewster's devices and interest in more research-oriented open fNIRS tools. The OpenfNIRS directory attributes HEGduino V2 to Joshua Brewster and Brains@Play. Distinguish the entry-level HEG/biofeedback kit from a high-density research fNIRS system; neither measures EEG. OpenfNIRS is the ecosystem, not one device; the directory separately lists Alexander von Luehmann's openNIRS 2015 hardware. ninjaNIRS is developed at Boston University's Neurophotonics Center, with its 2024 paper documenting wearable whole-head high-density hardware and performance characterization. Avoid equating affordability with equivalent sensitivity, channel coverage, or validation. No claim is made of NTX ownership, funding, or a formal partnership with Boston University or OpenfNIRS. Invite Morgan's firsthand examples of community support without inventing dates or outcomes.}
+\end{frame}
+
+\input{talks/2026-09-07-japan/ultrasound-community}
 
 \begin{frame}{Education: a way into the field}
-  \NTXPoint{The NeuroTech Primer}{An introduction to neurotechnology, including recording and stimulation.}
-  \NTXPoint{Workshops and webinars}{Opportunities to learn methods and hear from people working in the field.}
-  \NTXPoint{Learning through contribution}{Developer meetings and practical projects alongside written resources.}
+  \begin{columns}[T,onlytextwidth]
+    \column{.49\textwidth}
+      \NTXPoint{The NeuroTech Primer}{An introduction to neurotechnology, including recording and stimulation.}
+      \NTXPoint{Workshops and webinars}{Learn methods and hear from people working in the field.}
+      \NTXPoint{Learning through contribution}{Developer meetings, open science, and shared projects.}
+    \column{.46\textwidth}
+      \includegraphics[width=\linewidth,height=46mm,keepaspectratio]{assets/history/neurotechx-webinar-page.png}
+      \par\smallskip{\scriptsize \href{https://neurotechx.com/webinar/}{neurotechx.com/webinar}\par}
+  \end{columns}
   \NTXSource{https://www.neurotechx.org/education}{NeuroTechX: The NeuroTech Primer, learning resources, and developer meetings}
-  \note{[10:00--11:30] Connect this to the book and education slides in your original deck. These are several routes into participation, without claiming that every learner follows the same path. Not every resource linked on the education page was created by NeuroTechX.}
+  \note{[31:45--32:25] Connect this to the book and education slides in your original deck. These are several routes into participation, without claiming that every learner follows the same path. Not every resource linked on the education page was created by NeuroTechX. The right-hand visual is an authentic screenshot of neurotechx.com/webinar captured September 6, 2026. It illustrates the webinar resource, not a current event announcement. The page describes monthly webinars; distinguish this series from the weekly online pandemic Hacknights described by Morgan. The Primer cover asset remains in the repository.}
 \end{frame}
 
 \section{How do we add to the community?}
-\begin{frame}{What these activities contribute}
-  \NTXPoint{Access to people}{Meetings and events create opportunities to ask questions and find collaborators.}
-  \NTXPoint{Access to practice}{Shared experiments and workshops give people something concrete to try.}
-  \NTXPoint{Work others can reuse}{Code, benchmarks, recordings, and learning materials remain available beyond a meeting.}
-  \NTXSource{https://www.neurotechx.org/education}{Synthesis of the activities and resources shown in this talk}
-  \note{[11:30--13:00] This is a synthesis of the documented activities, not a claim about measured career or startup outcomes. Use a firsthand example if you want to illustrate the value to a particular person. The distinction is between what we provide and what a participant chooses to do with it.}
+\NTXDivider{Students Are the Future}
+\begin{frame}{A competition that helped organize student clubs}
+  \begin{columns}[T,onlytextwidth]
+    \column{.49\textwidth}
+      \NTXPoint{2016: a five-club pilot}{Montr\'eal and Toronto; a November Demo Day in Montr\'eal.}
+      \NTXPoint{A reason to organize}{The annual competition helped students establish university clubs.}
+      \NTXPoint{A shared goal}{Build a project and show the work.}
+    \column{.46\textwidth}
+      \includegraphics[width=\linewidth,height=44mm,keepaspectratio]{assets/history/student-competition-2018-flyer.jpg}
+      \par\smallskip{\scriptsize Original 2018 competition announcement\par}
+  \end{columns}
+  {\tiny\color{NTXMuted}Sources: \href{https://medium.com/neurotechx/ntx-student-clubs-initiative-2fba98b0d082}{NeuroTechX's 2017 retrospective}; \href{https://neurotechx.com/ntx-student-clubs-competition/}{2018 announcement}\par}
+  \note{[32:25--33:05] The retrospective explicitly connects the competition to helping students organize university clubs. Its 2016 pilot included SynapsETS, MENTAL, BSYS, PolyCortex, and NeuroTechUofT. The visual is the later 2018 flyer, not a 2016 Demo Day photograph. Morgan's lesson: the annual competition became an organizing function for student chapters. Keep this distinct from global hackathons and regional conferences.}
+\end{frame}
+
+\begin{frame}{Student participation: people and projects}
+  \begin{columns}[c,onlytextwidth]
+    \column{.58\textwidth}
+      \includegraphics[width=\linewidth,height=37mm,keepaspectratio]{assets/chapters/uc-davis-neuroassist-team-2020.png}
+      \par\smallskip{\small Neurotech@Davis: the NeuroAssist team\par}
+    \column{.36\textwidth}
+      \includegraphics[width=\linewidth,height=37mm,keepaspectratio]{assets/chapters/uc-davis-neuroassist-headset-2020.jpg}
+      \par\smallskip{\small Priyanshi wearing NeuroAssist\par}
+  \end{columns}
+  \medskip
+  {\small Built for the 2020 NeuroTechX Student Competition.\par}
+  \NTXSource{https://neuroengineering.ucdavis.edu/news/neurotechdavis-student-club-undergraduate-students-learn-about-neurotechnology}{Photos and identification: Neuroengineering at UC Davis, April 2022}
+  \note{[33:05--33:45] UC Davis identifies the team as Priyanshi, Kushaal, and Ayush and both photographs with the 2020 NeuroAssist competition project. The article was published in 2022; do not label these as photographs taken at a 2022 competition. Use this as a concrete example of student participation, not a clinical efficacy claim or proof of every club's experience.}
 \end{frame}
 
 % Historical events are part of the main presentation, not an addendum.
@@ -89,59 +295,113 @@
 \input{talks/2026-09-07-japan/history/hackathons-2022-2023}
 \input{talks/2026-09-07-japan/history/global-neurohack}
 
-\begin{frame}{What the hackathon history shows}
-  \NTXPoint{Different ways to join}{The 2022 and 2023 programs included technical work, data, and design.}
-  \NTXPoint{Different places to participate}{The earlier global programs combined online participation with local hosts.}
-  \NTXPoint{Different questions to work on}{The 2023 program added ethics; the 2026 tracks included speech decoding and BCI games.}
-  \NTXSource{https://neurotechx.com/hackathon2023/}{2022 and 2023 event programs; Global NeuroHack 2026 program}
-  \note{[16:00--18:00] These are observable features of the programs already described. This is where your own lessons about hosting, access, team formation, or follow-through belong. The current text deliberately does not invent what participants learned, whether teams continued, or which format worked best. Explain the historical importance in your own words.}
+\input{talks/2026-09-07-japan/dleeg}
+
+\section{How do we add to the community?}
+
+\begin{frame}{The NeuroTech Microcredential Program}
+  \begin{columns}[T,onlytextwidth]
+    \column{.62\textwidth}
+      \NTXPoint{2022: partnership announced}{Queen's Centre for Neuroscience Studies and NeuroTechX; Ontario-funded development.}
+      \NTXPoint{2024--2025: hands-on capstones}{First cohort: May 2024. Second: August 2025.\newline 15 students in each cohort.}
+      \NTXPoint{Online learning into lab practice}{Neuroscience, recording, imaging, and ethics;\newline a two-week, team-based capstone.}
+    \column{.33\textwidth}
+      \includegraphics[width=\linewidth]{assets/history/queens-capstone-2025.jpg}
+      \par\smallskip{\scriptsize 2025 capstone cohort\par}
+  \end{columns}
+  {\tiny\color{NTXMuted}Sources: \href{https://www.queensu.ca/gazette/media/news-release-queen-s-micro-credentials-address-knowledge-gaps-burgeoning-neurotech-industry}{Queen's launch announcement, October 2022}; \href{https://neurotechmicrocreds.com/capstone/}{program history and cohort photo}\par}
+  \note{[53:15--55:15] Queen's announced the partnership on October 17, 2022, with Susan Boehnke directing the program. Its announcement anticipated online courses from January 2023; that is an announced schedule, not independently verified delivery. The program documents 15 students in each of its first two capstones, May 2024 and August 2025. Students combined workshops with project design, data collection, analysis, and presentations. The current homepage describes an initial NTX partnership; do not infer present governance. The photographed cohort is 2025. This is the concrete education history that sets up more ambitious future student projects.}
 \end{frame}
+
+\input{talks/2026-09-07-japan/second-wave-bci}
+\input{talks/2026-09-07-japan/open-invasive-data}
 
 \section{What does the future hold for neurotech founders?}
-\begin{frame}{Founders can build on work already shared}
-  \NTXPoint{Learn the field}{Use educational resources and community conversations to develop a working understanding.}
-  \NTXPoint{Explore an idea}{Use open experiments and tools to investigate a technical question.}
-  \NTXPoint{Test the claim}{Use reproducible baselines to ask what an approach actually adds.}
-  \NTXSource{https://github.com/NeuroTechX/moabb}{Founder-facing implications of the resources shown; MOABB and EEG-ExPy}
-  \note{[18:00--20:00] This is the transition to the future, grounded in resources that exist. It is a suggested use of community resources, not a new NeuroTechX program or a promise of company formation. Open projects can inform exploration, but an intended product must establish its own requirements and evidence. No licensing or commercial-use advice is implied.}
-\end{frame}
+\NTXDivider{The Next Neurotech Founders}
+\input{talks/2026-09-07-japan/future}
+\input{talks/2026-09-07-japan/open-science-future}
 
-\begin{frame}{Where could the next founder contribute?}
-  \NTXPoint{Tools for people doing neurotechnology}{Recording workflows, experiments, analysis, and reproducibility.}
-  \NTXPoint{Applications built around a specific need}{The recent hackathon explored speech interfaces, BCI games, and open-ended prototypes.}
-  \NTXPoint{The practical questions}{Who needs this? What works today? What evidence is still missing?}
-  \NTXSource{https://global-neurohack.github.io/}{Global NeuroHack 2026 tracks; application questions for discussion}
-  \note{[20:00--22:00] Present these as directions to explore, not predictions of market size, timelines, or technical readiness. In particular, a non-implantable speech-decoding challenge does not establish a working speech product. A game built with mock neural data is not a demonstrated human BCI. Keep the distinction between a project prompt and a product claim clear.}
+\begin{frame}{What would make these ambitions possible?}
+  \begin{columns}[c,onlytextwidth]
+    \column{.50\textwidth}
+      \small
+  \NTXPoint{Access to facilities and mentors}{Help students work beyond the equipment available in a typical club.}
+  \NTXPoint{Projects that survive a competition}{Documentation, reproducible tests, and a handover to the next cohort.}
+  \NTXPoint{A route to the next experiment}{Keep promising teams connected to collaborators and research opportunities.}
+    \column{.46\textwidth}
+      \includegraphics[width=\linewidth,height=44mm,keepaspectratio]{assets/history/biopunk-workshop.jpeg}\par\smallskip
+      {\scriptsize Facilities and people to learn with\newline Photo: \href{https://biopunklab.com/}{Biopunk Lab}\par}
+  \end{columns}
+  \note{[90:45--91:45] These are proposed priorities, not new NTX commitments or claims that access is already secured. Connect the examples: quantum sensing needs characterization; MRI needs systems integration; fabrication needs facilities; sustained research needs teams that continue. Open curricula, collaborative research, and evaluated coding agents add new ways to participate. Invite the audience to contribute expertise and access.}
 \end{frame}
 
 \begin{frame}{A founder can also be a community contributor}
+  \begin{columns}[c,onlytextwidth]
+    \column{.50\textwidth}
+      \small
   \NTXPoint{Bring a question people can work on}{A technical problem, an experiment, or a result to examine together.}
   \NTXPoint{Share something useful}{Documentation, a reproducible example, a workshop, or time helping another builder.}
   \NTXPoint{Build relationships through the work}{Meet people by learning, making, and contributing alongside them.}
-  \note{[22:00--24:00] This is an invitation to participate, grounded in the existing formats. It does not promise cofounder matching, funding, regulatory support, or access to a particular partner. Invite founders to think about what they can add to the community as well as what they hope to find. This is discussion framing, not an organizational commitment.}
+    \column{.46\textwidth}
+      \includegraphics[width=\linewidth,height=44mm,keepaspectratio]{assets/chapters/san-francisco-original-hacknight.jpg}\par\smallskip
+      {\scriptsize Start by working on something together\newline Original SF Hacknights --- Morgan's photo\par}
+  \end{columns}
+  \note{[91:45--93:45] This is an invitation to participate, grounded in the existing formats. It does not promise cofounder matching, funding, regulatory support, or access to a particular partner. Invite founders to think about what they can add to the community as well as what they hope to find. This is discussion framing, not an organizational commitment.}
 \end{frame}
+
 
 \begin{frame}{What can we build and learn together?}
-  \NTXPoint{Join the community}{\href{https://www.neurotechx.org/community}{neurotechx.org/community}}
-  \NTXPoint{Explore the work}{\href{https://github.com/NeuroTechX}{github.com/NeuroTechX}}
-  \NTXPoint{Find a NeuroTechSF event}{\href{https://lu.ma/neurotechsf/}{lu.ma/neurotechsf}}
+  \begin{columns}[T,onlytextwidth]
+    \column{.48\textwidth}
+      \centering
+      \textbf{Join NTX}\par\smallskip
+      {\setlength{\fboxsep}{3mm}\colorbox{white}{\color{black}\qrcode[height=31mm,level=M,hyperlink=false]{https://bit.ly/ntx-slack}}}\par\smallskip
+      {\small\href{https://bit.ly/ntx-slack}{bit.ly/ntx-slack}\par}
+      {\scriptsize NeuroTechX Slack community\par}
+    \column{.48\textwidth}
+      \centering
+      \textbf{Slides \& LaTeX repo}\par\smallskip
+      {\setlength{\fboxsep}{3mm}\colorbox{white}{\color{black}\qrcode[height=31mm,level=M,hyperlink=false]{https://github.com/m9h/neurotechx-presentations}}}\par\smallskip
+      {\scriptsize\href{https://github.com/m9h/neurotechx-presentations}{github.com/m9h/neurotechx-presentations}\par}
+      {\scriptsize\color{NTXMuted}Public repository --- slides and LaTeX source\par}
+  \end{columns}
   \medskip
-  Morgan Hough\\
-  Executive Director, NeuroTechX
-  \note{[24:00--25:00] Thank the audience. Return to NeuroTechX as a community people can join and contribute to. Invite questions about the history, activities, and what founders need from a community. [25:00--30:00] Discussion.}
+  {\small Morgan Hough \quad \href{mailto:mhough@neurotechx.com}{mhough@neurotechx.com}\par}
+  \note{[93:45--94:45] Thank the audience. Invite participation in the next generation of student projects. This expanded working version is approximately 67 minutes including acknowledgements, before discussion. Confirm the event slot before delivery.}
+  \note{The QR codes encode https://bit.ly/ntx-slack and https://github.com/m9h/neurotechx-presentations. The latter comes from this repository's origin remote. Morgan authorized public release on September 6, 2026. The repository is public; the QR code opens its slides, PDFs and LaTeX source.}
 \end{frame}
 
-\appendix
-\begin{frame}{Sources}
-  \small
-  \NTXPoint{NeuroTechX and its activities}{\href{https://www.neurotechx.org/about}{Organization history}\quad
-    \href{https://www.neurotechx.org/education}{Education and developer resources}}
-  \NTXPoint{Projects}{\href{https://github.com/NeuroTechX/EEG-ExPy}{EEG-ExPy}\quad
-    \href{https://github.com/NeuroTechX/moabb}{MOABB}\quad
-    \href{https://arxiv.org/abs/2404.15319}{2024 MOABB benchmark study}}
-  \NTXPoint{Hackathon history}{\href{https://neurotechx.com/hackathon2022/}{2022}\quad
-    \href{https://neurotechx.com/hackathon2023/}{2023}\quad
-    \href{https://global-neurohack.github.io/}{Global NeuroHack 2026}}
-  \NTXPoint{Firsthand presentation material}{\href{https://docs.google.com/presentation/d/1TjLbvGQzA-wy0sNWeTrw_2A7cbOmr_JNhvvXQkZjr14/edit}{Morgan's original NeuroTechX presentation}}
-  \note{Backup only. SOURCES.md maps facts and figures to their origins. The future section is discussion grounded in existing resources, not a forecast or an announcement.}
+\section{Acknowledgements}
+\begin{frame}{Acknowledgements}
+  \begin{columns}[T,onlytextwidth]
+    \column{.47\textwidth}
+      \textbf{Board Members}\par\smallskip
+      \begin{minipage}[t]{.48\linewidth}
+        \includegraphics[width=\linewidth,height=21mm,keepaspectratio]{assets/people/john-griffiths.jpg}
+        \par\smallskip{\small John Griffiths\par}
+      \end{minipage}\hfill
+      \begin{minipage}[t]{.48\linewidth}
+        \includegraphics[width=\linewidth,height=21mm,keepaspectratio]{assets/people/susan-boehnke.png}
+        \par\smallskip{\small Susan Boehnke\par}
+      \end{minipage}
+      \par\medskip
+      {\small
+        \textbf{BCIWiki} --- Landon Burress\par\medskip
+        \textbf{MOABB} --- Bruno Aristimunha\par
+        Lead developer\par\medskip
+        \textbf{NeuroTechX SLC} --- Leonardo Ferrisi\par
+      }
+    \column{.48\textwidth}
+      \small
+      \setlength{\medskipamount}{3pt}
+      \NTXPoint{Officers}{Han Nyguen and Dhruv Mehrotra}
+      \NTXPoint{NTX Content Laboratory}{Sophie Valentine}
+      \NTXPoint{CogLab / Learning Planet Institute}{Romain Rouyer and Hans Rajoharison}
+      \NTXPoint{NeuroTechX Berlin}{Cris Michelli and Mitch Altman}
+      \NTXPoint{Greater Bay Area}{Kimberley Cheung\newline Hong Kong / Shenzhen / Guangzhou}
+  \end{columns}
+  \medskip
+  {\tiny\color{NTXMuted}Portraits: \href{https://www.camh.ca/en/science-and-research/science-and-research-staff-directory/john-griffths}{CAMH}; \href{https://neurotechmicrocreds.com/our-team/susan-boehnke-phd/}{Queen's NeuroTech Microcredential Program}\par}
+  \note{[94:45--95:15] Thank these colleagues for their contributions. Morgan supplied Dhruv Mehrotra's correction and Kimberley Cheung's acknowledgement for Hong Kong, Shenzhen, and Guangzhou. CogLab's official team page verifies Romain Rouyer and Hans Rajoharison. Greater Bay Area is shorthand for Guangdong--Hong Kong--Macao Greater Bay Area, which includes these three cities and others; it does not imply Kimberley has a formal role across the entire region. Sources: https://coglab.fr/about/team/ and https://www.bayarea.gov.hk/en/about/overview.html.}
+  \note{Morgan requested acknowledgement of Landon with BCIWiki and Bruno as MOABB lead developer. Landon's own BCIWiki contribution to Open Neuroscience spells his name Landon Burress: https://open-neuroscience.com/en/post/bciwiki/. Bruno's own GitHub profile verifies Bruno Aristimunha and his MOABB involvement: https://github.com/bruAristimunha. The lead-developer role is supplied by Morgan.}
 \end{frame}
