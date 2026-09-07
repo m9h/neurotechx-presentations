@@ -1,6 +1,6 @@
 # Introduction for Japan, September 7, 2026
 
-34 slides, planned remarks **32:15**; divider transitions are included in adjacent speaking time. Allow additional time for questions. Restoring quantum sensors (1:00) and Mind in Vitro (1:30) extends the previous 29:45 version.
+33 slides, planned remarks **31:15**; divider transitions are included in adjacent speaking time. Allow additional time for questions. Quantum sensors (1:00) and Mind in Vitro (1:30) are restored; removing the community-contributor slide saves 1:00.
 
 Build: `make intro`. Outputs: `pdf/intro-japan-2026.pdf` and `pdf/intro-japan-2026-notes.pdf`.
 
@@ -47,15 +47,14 @@ This is a standalone, editable selection, not a replacement for the complete dec
 | 29 | 25:45–26:45 | Biopunk Lab: a home for synthetic neurobiology | future.tex |
 | 30 | 26:45–28:15 | The future of neurobiotech: community wetware (Mind in Vitro) | future.tex |
 | 31 | 28:15–29:45 | What would make these ambitions possible? | slides.tex |
-| 32 | 29:45–30:45 | A founder can also be a community contributor | slides.tex |
-| 33 | 30:45–31:15 | Acknowledgements | slides.tex |
-| 34 | 31:15–32:15 | What can we build and learn together? | slides.tex |
+| 32 | 29:45–30:15 | Acknowledgements | slides.tex |
+| 33 | 30:15–31:15 | What can we build and learn together? | slides.tex |
 
 Sources above are relative to this talk directory. Existing citations and image credits are retained on the selected slides; detailed provenance remains in the full deck and asset source files. Earlier unresolved image requests (Paris CRI/LPI Hacknight photo and student-club logo graphic) have not been silently substituted.
 
 ## Optional 20-minute delivery
 
-Skip slides 12, 13, 15, 16, 17, 22, 24, 25, 26, 29 and 30 (Content Lab, newsletter, EEG-ExPy, MOABB, DLEEG summary, microcredential, TMS, quantum sensors, MRI, Biopunk Lab, Mind in Vitro): saves 11:15. Trim 30 seconds each from the second- and third-wave discussions: **20:00**. Keep the chapter-building examples, student competition, student project, Global NeuroHack and closing invitation.
+Skip slides 12, 13, 15, 16, 17, 22, 24, 25, 26, 29 and 30 (Content Lab, newsletter, EEG-ExPy, MOABB, DLEEG summary, microcredential, TMS, quantum sensors, MRI, Biopunk Lab, Mind in Vitro): saves 11:15. This yields **20:00** without further trimming. Keep the chapter-building examples, student competition, student project, Global NeuroHack and closing invitation.
 
 ## Second-wave bridge
 
