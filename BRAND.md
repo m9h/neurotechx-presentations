@@ -1,18 +1,39 @@
-# Presentation design
+# Presentation design (2026–27 NeuroTechX Beamer theme)
 
-The shared theme uses the restrained academic style requested by Morgan Hough. It replaces the original dark background, bright cyan accents, and repeated card layouts throughout the presentation and starter template.
+`beamerthemeNeuroTechX.sty` implements the shared 2026–27 NeuroTechX editorial slide language used in John Griffiths's *An introduction to NeuroTechX (2026–27)* presentation while keeping full backwards compatibility for earlier NeuroTechX Beamer talks.
 
-| Role | Hex | LaTeX name |
+## Color palette
+
+| Role | Hex | LaTeX color |
 | --- | --- | --- |
-| Warm paper | `#FFFBF0` | `NTXPaper` |
-| Charcoal text | `#282828` | `NTXInk` |
-| Secondary text | `#64645F` | `NTXMuted` |
-| Muted teal, principally links | `#376C68` | `NTXTeal` |
+| Primary warm ivory canvas | `#F7F5F0` | `NTXPaperBase` / `NTXPaper` |
+| Alternating warm stone canvas | `#EDE9E0` | `NTXSand` |
+| Table header surface | `#F1EEE7` | `NTXTableHead` |
+| Primary ink & strong column rules | `#1D2229` | `NTXInk` |
+| Dark statement / closing canvas | `#1D2229` | `NTXSlate` |
+| Secondary body text (light slides) | `#535C67` | `NTXMuted` |
+| Secondary body text (dark slides) | `#BCC3CB` | `NTXMutedOnDark` |
+| Subtle hairline & table rule | `#CFC8BA` | `NTXRule` |
+| Petrol teal eyebrows, stats, italic accents & links | `#0B6B70` | `NTXTeal` |
+| Light cyan-teal accent on dark slides | `#4CC3C9` | `NTXTealOnDark` |
+| Subtle statement watermark | `#DDD8CC` | `NTXWatermark` |
 
-TeX Gyre Heros provides readable sans-serif type and portable XeLaTeX/Tectonic builds. pdfLaTeX uses Latin Modern. The wordmark is plain bold text, not a newly drawn logo.
+## Typography & mark
 
-Use ample margins, short headings, ordinary text, and actual project figures. Standard blocks have no contrasting card fill. Avoid decorative dashboards, gradients, bright accent panels, or invented graphics. Use color sparingly. Preserve sources for imported figures.
+* **Display & headings (`\NTXSerif`):** `EB Garamond` when installed (Overleaf / TeX Live / system), falling back cleanly to `Palatino` (macOS/Tectonic offline) or `Latin Modern Roman` (`pdfLaTeX`).
+* **Eyebrows, body copy, tables & footers (`\NTXSans`):** `Public Sans` when installed, falling back to `TeX Gyre Heros`.
+* **Vector NTX mark:** Drawn directly in TikZ (`\NTXBadge`, `\NTXHexIcon`, `\NTXFooterMark`) so decks compile cleanly anywhere without external raster logo files.
 
-The overall warmth and simplicity take cues from Morgan's original presentation, with a sans-serif font choice for this working theme. The 2022, 2023, and 2026 event websites provide historical facts only; their designs are not copied.
+## Theme modes & layout helpers
 
-This is a reusable presentation treatment, not a claim of formally approved NeuroTechX brand guidelines. Compatibility aliases retain the original helper names without retaining the original bright palette.
+* `\usetheme{NeuroTechX}` — Default 2026–27 warm editorial mode (`#F7F5F0` ivory, `#EDE9E0` `NTXSandFrame`, `#1D2229` `NTXDarkFrame`).
+* `\usetheme[dark]{NeuroTechX}` — Dark `#1D2229` slate default throughout.
+* `\usetheme[legacyblack]{NeuroTechX}` — Preserves the September 2026 `#000000` black/white appearance for archival rebuilds.
+* Layout macros:
+  * `\NTXEyebrow{WHAT WE DO}` — Tracked petrol-teal uppercase kicker above the serif frame title.
+  * `\NTXCol{Heading}{Body}` — Crisp top horizontal rule + bold serif column heading + muted sans body.
+  * `\NTXSubSection{STACK}` — Subtle hairline + tracked teal sub-label for two-column project cards.
+  * `\NTXStat{30+}{cities with local chapters}` — Large petrol-teal serif figure with hairline and caption.
+  * `\NTXStatement{Lead sentence}{Footnote}` — Mission/quote layout with subtle hexagon-infinity watermark.
+  * `\NTXFooterLink{https://neurotechx.org}{neurotechx.org}` — Teal link bar above the footer mark.
+  * `\NTXCodeBox{...}` — Bordered warm-stone monospace block for technical workshops.

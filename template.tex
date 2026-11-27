@@ -1,22 +1,96 @@
 \documentclass[aspectratio=169,11pt,t]{beamer}
 \usetheme{NeuroTechX}
-\title[Short title]{Your presentation title}
-\subtitle{A short description}
-\author{Your name\newline Your role}
-\institute{Your chapter or event}
-\date{\today}
+\usepackage{qrcode}
+
+\NTXTitleKicker{NEUROTECHX · 2026–27}
+\title[Intro to NeuroTechX]{An introduction to\\NeuroTechX}
+\subtitle{Reusable LaTeX Beamer starter matching the 2026–27 NeuroTechX slide system.}
+\author{}
+\institute{neurotechx.org}
+\date{}
+
 \begin{document}
-\begin{frame}[plain]\titlepage\end{frame}
-\section{Your topic}
-\begin{frame}{One clear idea}
-  \NTXPoint{The question}{Explain the problem in a sentence.}
-  \NTXPoint{The evidence}{Use a concrete example, result, or figure.}
-  \NTXPoint{What it means}{State the conclusion supported by that evidence.}
-  \NTXSource{https://www.neurotechx.org/}{Replace with a direct supporting source}
-  \note{Add your speaker notes here.}
+
+\begin{frame}[plain]
+  \titlepage
 \end{frame}
-\begin{frame}{Discussion}
-  \NTXPoint{Your closing question}{Give the audience something specific to respond to.}
-  \href{https://www.neurotechx.org/community}{neurotechx.org/community}
+
+\begin{NTXSandFrame}
+  \vspace{8mm}
+  \NTXStatement{%
+    NeuroTechX is an international community that \emph{\color{NTXTeal}facilitates the advancement of neurotechnology.}%
+  }{%
+    Operated by Soci\'et\'e BCI Montr\'eal, a Quebec non-profit (NEQ 1170984166). Run by volunteers.%
+  }
+\end{NTXSandFrame}
+
+\section{What we do}
+\begin{frame}{Our pillars}
+  \NTXEyebrow{WHAT WE DO}
+  \vspace{2mm}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.295\textwidth}
+      \NTXCol{Community}{Brain technology needs a diverse and dynamic community of experts, entrepreneurs and enthusiasts. We are a connector.}
+    \column{0.295\textwidth}
+      \NTXCol{Education}{Accessible resources and learning opportunities for beginners, experts and everyone in between.}
+    \column{0.295\textwidth}
+      \NTXCol{Innovation}{We hope to inspire our members to meet today's challenges and opportunities with creativity and confidence.}
+  \end{columns}
+  \NTXFooterLink{https://neurotechx.org/community}{neurotechx.org/community}
 \end{frame}
+
+\begin{frame}{By the numbers}
+  \NTXEyebrow{THE COMMUNITY TODAY}
+  \vspace{2mm}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.295\textwidth}
+      \NTXStat{30+}{cities with local chapters}
+    \column{0.295\textwidth}
+      \NTXStat{100+}{hours of webinar archives}
+    \column{0.295\textwidth}
+      \NTXStat{60+}{neurotech employers on the jobs board}
+  \end{columns}
+\end{frame}
+
+\begin{NTXSandFrame}[BCI Workshop v2.0]
+  \NTXEyebrow{PROJECT}
+  {\NTXSans\small\color{NTXMuted}A turnkey 2--3 hour hands-on Brain--Computer Interface workshop for local chapters and student clubs.\par}
+  \vspace{5mm}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.46\textwidth}
+      \NTXSubSection{STACK}
+      \begin{itemize}\small\color{NTXInk}
+        \item Python 3.11+ (\texttt{uv}), MNE-LSL, pyRiemann
+        \item Timeflux reactive YAML + browser UI track
+        \item Zero-hardware replay + 18 EEG/biosignal targets
+      \end{itemize}
+    \column{0.46\textwidth}
+      \NTXSubSection{EXERCISES}
+      \begin{itemize}\small\color{NTXInk}
+        \item Live EEG inspection, blinks, EMG \& Berger alpha
+        \item Calibrated binary BCI (Shrinkage LDA vs.\ MDM)
+        \item LSL, UDP \& WebSocket outputs for hackathons
+      \end{itemize}
+  \end{columns}
+  \NTXFooterLink{https://github.com/NeuroTechX/bci-workshop}{github.com/NeuroTechX/bci-workshop}
+\end{NTXSandFrame}
+
+\begin{NTXDarkFrame}
+  \begin{columns}[c,onlytextwidth]
+    \column{0.62\textwidth}
+      \NTXBadge[13.5mm]\par\vspace{5mm}
+      {\NTXSerif\fontsize{26}{30}\selectfont\color{NTXInk}Questions?\par}
+      \vspace{4mm}
+      {\color{NTXRuleActive}\rule{18mm}{0.6pt}\par}\vspace{4mm}
+      {\NTXSans\small\color{NTXMuted}
+        \href{https://neurotechx.org}{neurotechx.org}\par\smallskip
+        \href{https://github.com/NeuroTechX}{github.com/NeuroTechX}\par\smallskip
+        \href{mailto:volunteer@neurotechx.org}{volunteer@neurotechx.org}\par
+      }
+    \column{0.30\textwidth}
+      \centering
+      {\setlength{\fboxsep}{3mm}\colorbox{white}{\color{black}\qrcode[height=30mm,level=M,hyperlink=false]{https://neurotechx.org/community}}}
+  \end{columns}
+\end{NTXDarkFrame}
+
 \end{document}
